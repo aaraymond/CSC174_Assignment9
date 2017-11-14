@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Godiva Chocolatier</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Slabo+27px" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/navigation.css">
+		<link rel="stylesheet" type="text/css" href="css/form.css">
+	</head>
+ 
+	<body>
+		<!-- <nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="is-current" href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav> -->
+
+		<div class="container">
+		<header>
+			<h1>Godiva Chocolatier</h1>
+				<div>The Manufacturer of Fine chocolate <a href="https://en.wikipedia.org/wiki/Theobroma_cacao">Theobroma cacao</a> seeds</div>
+		</header>
+
+
+		<section class="hero">
+			
+			<h2>About Godiva</h2>
+            <p>Godiva Chocolatier is a manufacturer of premium fine chocolates and related products. Godiva, founded in Belgium in 1926, was purchased by the Turkish Yıldız Holding, owner of the Ülker Group, on November 20, 2007.Godiva owns and operates more than 600 retail boutiques and shops in the United States, Canada, Europe, and Asia and is available via over 10,000 specialty retailers.
+
+            <p>In addition to chocolates, Godiva also sells truffles, coffee, cocoa, biscuits, dipped fruits and sweets, chocolate liqueur, shakes, wedding and party favors and other items arranged in gift baskets. Godiva's signature package is the Gold Ballotin (French for "small, cardboard box of chocolates"). Godiva also produces seasonal and limited-edition chocolates with special packaging for major holidays. Godiva also has license agreements for the production of ice cream, cheesecake, coffee pods and liqueur that comes in several chocolate-related flavors. Products are also available in sugar-free and Kosher varieties.</p>
+            <p>It is important to harvest the pods when they are fully ripe, because if the pod is unripe, the beans will have a low cocoa butter content, or sugars in the white pulp will be insufficient for fermentation, resulting in a weak flavor. After fermentation, the beans must be quickly dried to prevent mold growth. Climate and weather permitting, this is done by spreading the beans out in the sun from five to seven days. </p>
+            
+            <p>Godiva continues to own and operate more than 450 shops worldwide.The company issues six seasonal mail-order catalogs a year in the USA and also accepts online and telephone orders for their products. Godiva chocolate is also sold in local malls and mini shops.</p>
+            
+            <p>Godiva opened (May 2012) Café Godiva in London’s Harrod’s Department Store. The 40-plus table venue features Godiva’s chocolate beverages, pastries, and chocolates. The company also has a store in the Harrods Food Hall.</p>
+		</section><!--.hero-->
+
+		<article>
+			<h2>Contact Us</h2>
+				<form method="post" action="#">
+					<label class="fixed" for="yourname">Name: </label>
+					<input type="text" name="yourname" id="yourname">
+					<br>
+					<label class="fixed" for="youremail">Email Address: </label>
+					<input type="email" name="youremail" id="youremail">
+					<br>
+					<label class="fixed" for="yournumber">Telephone Number:</label>
+					<input type="tel" name="yournumber" id="yournumber">
+					<br>
+					<fieldset>
+						<!--<legend>Feedback</legend>-->
+
+						<h3>Which type(s) of chocolate do you prefer?</h3>					
+							<input type="checkbox" name="unsweetened" id="unsweetened" value="unsweetened_choc">
+							<label for="unsweetened">Unsweetened Chocolate</label>
+							<br>
+							<input type="checkbox" name="dark" id="dark" value="dark_choc">
+							<label for="dark">Dark Chocolate</label>
+							<br>
+							<input type="checkbox" name="milk" id="milk" value="milk_choc">
+							<label for="milk">Milk Chocolate</label>
+							<br>
+							<input type="checkbox" name="white" id="white" value="white_choc">
+							<label for="white">White Chocolate</label>
+
+						<h3>How useful did you find this website?</h3>
+							<input type="radio" name="useful" id="very" value="very-useful">
+							<label for="very">Very useful</label>
+							<br>
+							<input type="radio" name="useful" id="somewhat" value="somewhat_useful">
+							<label for="somewhat">Somewhat useful</label>
+							<br>
+							<input type="radio" name="useful" id="not" value="not_useful">
+							<label for="not">Not useful</label>							
+					</fieldset>
+
+					<label for="comments">Tell us about your favorite ways to enjoy chocolate:</label>
+					<textarea name="comments" id="comments"></textarea>
+
+					<input type="submit" value="Submit Feedback">
+				</form>
+		</article>
+
+		<footer>
+			
+				<!-- <h3>Source:</h3>
+					<p>"Chocolate." <em>Wikipedia: The Free Encyclopedia</em>. Wikimedia Foundation, Inc. <a href="https://en.wikipedia.org/wiki/Chocolate">https://en.wikipedia.org/wiki/Chocolate</a> (accessed February 2, 2017).</p> -->
+			From Wikipedia: "<a href="https://en.wikipedia.org/wiki/Godiva_Chocolatier">Godiva Chocolatier</a>."
+			This webpage, by Tori Madway, Michael Hood, Frankie Romero 2017
+
+		</footer>
+	</div><!--.container-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("input[type='submit']").click(function(){
+			var newWindow = window.open("","","top=100,left=100,width=300,height=400");
+			var x = $("form").serializeArray();
+			$.each(x, function(i, field){
+				$(newWindow.document).contents().find("body").append(
+					"<strong>" + field.name + ":</strong> " + 
+					field.value + "<br><br>"
+				);;
+			});
+		});
+	});
+	</script>
+	</body>
+</html>
