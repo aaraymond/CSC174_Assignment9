@@ -2,6 +2,7 @@
 
 body {
 	background-color: #e1b79a;
+
 	color: #331b0b;
 	font-family: 'Open Sans', sans-serif;
     font-style: bold;
@@ -11,26 +12,35 @@ body {
 h1 {
 	letter-spacing: .02em;
 	color: #384365;
+	font-size: 40px;
+
+	/*padding-top: 7%;*/
 	}
 h2 {
-	margin: 20px 0;
+	margin: 25px 0;
 	padding-top: 25px;
+
 	font-family: 'Slabo 27px', serif;
 	letter-spacing: .01em;
 	font-weight: normal;
+	font-size: 30px;
 	color: #384365;
 	}
 h3 {
 	margin: 20px 0;
 	padding-top: 25px;
+
 	font-family: 'Slabo 27px', serif;
 	letter-spacing: .01em;
 	font-weight: normal;
+	font-size: 25px;
 	color: #384365;
 	}
 p {
-	margin-top: 0px;
-	letter-spacing: .01em;
+	margin: 1.6em auto;
+
+	letter-spacing: .02em;
+	line-height: 2em;
 	}
 ol {padding-left: 15px;}
 ul {padding-left: 15px;}
@@ -44,16 +54,26 @@ a:hover {color: #81411c;}
 	margin: 0 auto;
 	width: 80%;
 	max-width: 960px;
+	background-color: #fceee5;
+	padding: 3%;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	border: 0px solid #800000;
 	}
 
 article, aside {display: table-cell;}
 article {
 	width: 55%;
 	padding-bottom: 5%;
-	padding-right: 10%;
+	padding-right: 15%;
 	}
 aside {
 	width: 45%;
 	padding-left: 40px;
 	/*vertical-align: top;*/
 	}
+
+footer {
+	font-size: small;
+}
