@@ -1,16 +1,18 @@
 /*****************************BASE STYLES*************************/
 
 body {
-	background-color: #DFEFF0;
-	color: #333333;
+	background-color: saddlebrown;
+	color: black;
 	font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
 	}
 h1 {
-	color:#AD235E;
+	color: darkgoldenrod;
 	}
 h2 {font-style: italic;
 	font-weight: normal;
 	margin-bottom: 0px
+    font
 	}
 p {margin-top: 0px;
 	}
