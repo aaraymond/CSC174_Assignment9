@@ -45,3 +45,19 @@ font-size: smaller;
 
 form input[type=submit] {margin-top: 10px;}
 /*fieldset > lable + h3 {margin-top: 16px;}*/
+
+#btn {
+    padding: 10px 15px 11px !important;
+    background-color: white;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+    font-size: 14px !important;
+    font-weight: bold;
+    color: #384365;
+}
