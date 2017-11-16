@@ -55,18 +55,11 @@ mysqli_close($connection);
 <head>
 
 <title>Edit Survey</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/styles.css">
-<link rel="stylesheet" type="text/css" href="css/override.css">
-<link rel="stylesheet" type="text/css" href="css/form.css">
 
 </head>
 
 <body>
-	<div class="container">
-    </div><!--.container-->
-</body>
-</html>
+
 
 
 

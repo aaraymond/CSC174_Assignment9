@@ -28,23 +28,36 @@
 	$favselect3 = $_POST["option3"];
 	$favselect4 = $_POST["option4"];
 
+	$favselect1 = mysqli_real_escape_string($connection, $favselect1);
+	$favselect2 = mysqli_real_escape_string($connection, $favselect2);
+	$favselect3 = mysqli_real_escape_string($connection, $favselect3);
+	$favselect4 = mysqli_real_escape_string($connection, $favselect4);
+
+
+
 	$fakeselect = $_POST["sneaker"]; 
+	$fakeselect = mysqli_real_escape_string($connection, $fakeselect);
 
 	$fakeselect1 = $_POST["sneaks"]; 
+	$fakeselect1 = mysqli_real_escape_string($connection, $fakeselect1);
 
 	$prove1 = $_POST["proof1"];
 	$prove2 = $_POST["proof2"];
 	$prove3 = $_POST["proof3"];
 	$prove4 = $_POST["proof4"];
 
+	$prove1 = mysqli_real_escape_string($connection, $prove1);
+	$prove2 = mysqli_real_escape_string($connection, $prove2);
+	$prove3 = mysqli_real_escape_string($connection, $prove3);
+	$prove4 = mysqli_real_escape_string($connection, $prove4);
+
 
 	// 2. Perform database query
 	$query  = "INSERT INTO survey (";
-	$query .= "name, phone, email, comments, size";
-	$query .= "favorite, favorite2, favorite3, favorite4, fakeone, faketwo, reason, reason2, reason3, reason4";
+	$query .= "name, phone, email, comments, favorite, favorite2, favorite3, favorite4, size, fakeone, faketwo, reason, reason2, reason3, reason4";
+
 	$query .= ") VALUES (";
-	$query .= " '{$Name}', '{$Phone}', '{$Email}', '{$Comments}', '{$Size}' ";
-	$query .= " '{$favselect1}', '{$favselect2}', '{$favselect3}', '{$favselect4}', '{$fakeselect}', '{$fakeselect1}', '{$prove1}', '{$prove2}', '{$prove3}', '{$prove4}' ";
+	$query .= " '{$Name}', '{$Phone}', '{$Email}', '{$Comments}', '{$favselect1}', '{$favselect2}', '{$favselect3}', '{$favselect4}', '{$Size}','{$fakeselect}', '{$fakeselect1}', '{$prove1}', '{$prove2}', '{$prove3}', '{$prove4}' "; 
 	$query .= ")";
 
 	$result = mysqli_query($connection, $query);
@@ -55,14 +68,8 @@
 <html>
 <head>
 	<title> Survey Database Insert</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/override.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
-
-	<div class="container">
 
 	<h1>Survey Insert</h1>
 
@@ -83,8 +90,6 @@
 
 	<a href="admin.php">Continue</a>
 
-
-    </div><!--.container-->
 </body>
 </html>
 

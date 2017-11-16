@@ -28,19 +28,25 @@
 
 <!doctype html>
 <html>
-<div class="container">
 <head>
 	<title>Survey DB</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/override.css">
-    <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
 
-	<h1>Survey db +</h1>
+	<h1>Survey db </h1>
 
 	<table border>
+	<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Phone Number</th>
+			<th>Email</th>
+			<th>Comments</th> 
+			<th>Fav Sneaker</th>
+			<th>Shoe size</th>
+			<th>Fakes</th>
+			<th>Reason</th>
+			</tr>
 
 <?php
 	// 3. Use returned data (if any)
@@ -48,12 +54,31 @@
 		// output data from each row
 ?>
 
-		<tr>
+
+
+
+<tr>
 			<td><?php echo $pages["counter"]; ?></td>
+		
+		
+			
 			<td><?php echo $pages["name"]; ?></td>
+		
+		
+		
 			<td><?php echo $pages["phone"]; ?></td>
+		
+		
+			
 			<td><?php echo $pages["email"]; ?></td>
+		
+	
 			<td><?php echo $pages["comments"]; ?></td>
+			<td><?php echo $pages["favorite"]; ?></td>
+			<td><?php echo $pages["size"]; ?></td>
+			<td><?php echo $pages["fakeone"]; ?></td>
+			<td><?php echo $pages["reason"]; ?></td>
+			
 			<td>
   					<a href="editform.html">
     				<div style="height:100%;width:100%">
@@ -69,8 +94,8 @@
     			</div>
  				 </a>
 			</td>
-
-		</tr>
+</tr>
+		
 
 <?php } ?>
 
@@ -79,7 +104,6 @@
 	<br>
 	<a href="contact.html">Back to the SURVEY</a>
 
-</div><!--.container-->
 </body>
 </html>
 
