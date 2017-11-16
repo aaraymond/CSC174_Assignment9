@@ -32,7 +32,7 @@
 
 <p>* Required</p>
 
-<input type="submit" name="submit" value="Submit">
+<input class="btn" type="submit" name="submit" value="Submit">
 
 </div>
 
