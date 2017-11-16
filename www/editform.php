@@ -5,10 +5,11 @@
 	<title> Web Database</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head> 
 <body>
+	<div class="container">
 	<h1> EditSurvey Form</h1>
 
 
@@ -31,11 +32,13 @@
 
 <p>* Required</p>
 
-<input type="submit" name="submit" value="Submit">
+<input class="btn" type="submit" name="submit" value="Submit">
 
 </div>
 
 </form>
+
+</div><!--.container-->
 
 </body>
 

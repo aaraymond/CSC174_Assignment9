@@ -59,7 +59,7 @@ aside {
 	}*/
 
 body {
-	background-color: lightgray;
+	background-color: black;
 
 	color: #404040;
 	font-family: 'Open Sans', sans-serif;
@@ -73,6 +73,7 @@ h1 {
 	color: #000000;
 	font-size: 35px;
 	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.5em;
 
 	/*padding-top: 7%;*/
 	}
@@ -86,6 +87,7 @@ h2 {
 	font-weight: normal;
 	font-size: 30px;
 	color: #000000;
+	line-height: 1.5em;
 	}
 
 h3 {
@@ -121,13 +123,15 @@ a:hover {color: #c01919;}
 
 .container {
 	margin: 0 auto;
-	width: 80%;
-	max-width: 960px;
+	width: 85%;
+	max-width: 1000px;
+	height: 100%;
 	background-color: #ffffff;
-	padding: 3%;
-	border-radius: 1px; 
-	-moz-border-radius: 1px; 
-	-webkit-border-radius: 1px; 
+	padding: 7%;
+
+	border-radius: 2px; 
+	-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; 
 	border: 0px solid #800000;
 	}
 
@@ -149,24 +153,31 @@ footer {
 
 
 .btn {
-    padding: 10px 15px 11px !important;
+    padding: 5px 10px !important;
     background-color: white;
-    border-radius: 1px;
-    -moz-border-radius: 1px;
-    -webkit-border-radius: 1px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
 
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 14px !important;
+    font-size: 15px !important;
     font-weight: bold;
     letter-spacing: .05em;
 }
+
+header {text-align: center;}
 
 header div {
 	font-size: small;
 }
 
 .rsp {width: 100%;}
+
+/*.snk {
+	width: 80%;
+	margin: auto;
+}*/

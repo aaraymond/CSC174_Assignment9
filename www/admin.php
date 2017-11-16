@@ -28,11 +28,12 @@
 
 <!doctype html>
 <html>
+<div class="container">
 <head>
 	<title>Survey DB</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
@@ -78,6 +79,7 @@
 	<br>
 	<a href="contact.html">Back to the SURVEY</a>
 
+</div><!--.container-->
 </body>
 </html>
 
