@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta charset= "utf-8"> 
+	<title> Web Database</title> 
+
+</head> 
+<body>
+	<h1> Edit Survey Form</h1>
+
+
+
+<form action="edit-survey.php" method="post">
+
+<input type="hidden" name="id" value="<?php echo $count; ?>"/>
+
+<div>
+
+
+<strong>Count Number: </strong> <input type="text" name="counter"/><br/>
+
+<strong>Full Name: </strong> <input type="text" name="yourname"/><br/>
+
+<strong>Phone Number: </strong> <input type="text" name="yournumber" /><br/>
+
+<strong>Email: </strong> <input type="text" name="youremail"/><br/>
+
+<strong>Comments: </strong> <input type="text" name="comments"/><br/>
+
+
+<input type="submit" name="submit" value="Submit">
+
+</div>
+
+</form>
+
+</body>
+
+</html>
