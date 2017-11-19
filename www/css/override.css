@@ -21,7 +21,7 @@ table, th, td {
     border: 1px solid black;
 }
 
-tr:1st-child {
+tr:first-child {
 	background-color: black;
 	color: white;
 }
