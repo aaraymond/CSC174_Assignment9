@@ -83,7 +83,26 @@
             <h2>Shoe Survey</h2>
 
             <form method="post">
-                
+                <fieldset>
+                    <legend>Personal Information:</legend>
+
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Name: </label>
+
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email: </label>
+
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male"> Male</label>
+
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female"> Female</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Shoe Survey:</legend>
+                    
+                </fieldset>
             </form>
         </section>
 
