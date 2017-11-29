@@ -47,12 +47,14 @@
         <section id="Brands">
             <h2>Popular Brands Today</h2>
             <!-- Possibly make a horizontal grid layout and use the brand logo images instead of words, then on hover display the brand name. -->
-            <ol>
-                <li>Nike</li>
-                <li>Adidas</li>
-                <li>Jordan (Nike Inc.)</li>
-                <li>Converse (Nike Inc.)</li>
-            </ol>
+            
+            <img src="images/logoNike.png" alt="Nike Logo">
+
+            <img src="images/logoAdidas.png" alt="Adidas Logo">
+
+            <img src="images/logoJordan.png" alt="Jordan Logo">
+
+            <img src="images/logoConverse.png" alt="Converse Logo">
 
             <p>Source: Fortune.com</p>
         </section>
