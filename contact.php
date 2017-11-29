@@ -84,24 +84,78 @@
 
             <form method="post">
                 <fieldset>
-                    <legend>Personal Information:</legend>
-
-                    <input type="text" name="name" id="name" required>
+                    <h3>Personal Information</h3>
+                    
                     <label for="name">Name: </label>
-
-                    <input type="email" name="email" id="email" required>
+                    <input type="text" name="name" id="name" required><br>
+                    
                     <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" required><br><br>
+
+                    <div class="questionTitle">Please Select Your Gender:</div>
 
                     <input type="radio" name="gender" id="male" value="male">
-                    <label for="male"> Male</label>
+                    <label for="male"> Male</label><br>
 
                     <input type="radio" name="gender" id="female" value="female">
                     <label for="female"> Female</label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Shoe Survey:</legend>
-                    
+                    <h3>About Your Shoes</h3>
+
+                    <div class="question male">
+                        <div class="questionTitle">Which of the following shoe styles do you own?</div>
+
+                        <input type="checkbox" name="styleType[]" id="dress" value="dress">
+                        <label for="dress"> Dress</label><br>
+
+                        <input type="checkbox" name="styleType[]" id="casual" value="casual">
+                        <label for="casual"> Casual</label><br>
+
+                        <input type="checkbox" name="styleType[]" id="athletic" value="athletic">
+                        <label for="athletic"> Athletic</label><br><br>
+                    </div>
+
+                    <div class="question female">
+                        <div class="questionTitle">Which of the following shoe styles do you own?</div>
+
+                        <input type="checkbox" name="styleType[]" id="heels" value="heels">
+                        <label for="heels"> Heels</label><br>
+
+                        <input type="checkbox" name="styleType[]" id="flats" value="flats">
+                        <label for="flats"> Flats</label><br>
+
+                        <input type="checkbox" name="styleType[]" id="athletic" value="athletic">
+                        <label for="athletic"> Athletic</label><br><br>
+                    </div>
+
+                    <div class="question chooser">
+                        <div class="questionTitle">How likely are you to purchase new shoes in the next 3 months?</div>
+
+                        <label for="howLikely">0 Being Least Likely and 10 Most Likely</label><br>
+                        <input type="range" name="rangeLikely" id="howLikely" min="0" max="10"><br><br>
+
+                        <!-- use html5 'range' attribute to make a slider from 0 to 10 -->
+                        
+                    </div>
+
+                    <div class="question">
+                        <div class="questionTitle">When did you last purchase a pair of shoes?</div>
+ 
+                        <input type="radio" name="shoePurchase" id="lessOne" value="Less than a month ago">
+                        <label for="lessOne"> Less than a month ago</label><br>
+
+                        <input type="radio" name="shoePurchase" id="oneToSix" value="1-6 months ago">
+                        <label for="oneToSix"> 1-6 months ago</label><br>
+
+                        <input type="radio" name="shoePurchase" id="sixToYear" value="6 months to a year ago">
+                        <label for="sixToYear"> 6 months to a year ago</label><br>
+
+                        <input type="radio" name="shoePurchase" id="overYear" value="More than a year ago">
+                        <label for="overYear"> More than a year ago</label><br>
+                    </div>
+
                 </fieldset>
             </form>
         </section>
