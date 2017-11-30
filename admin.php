@@ -28,7 +28,7 @@
 
 	<h1>Survey db </h1>
 
-	<table border>
+	<table>
 	<tr>
 			<th>ID</th>
 			<th>Name</th>

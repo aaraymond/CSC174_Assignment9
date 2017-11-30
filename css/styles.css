@@ -4,8 +4,6 @@ body {
 	color: #404040;
 	font-family: 'Open Sans', sans-serif;
     	font-style: bold;
-   	line-height: 1.7em;
-	letter-spacing: .01em;
 	}
 
 
@@ -15,10 +13,9 @@ h1 {
 	font-size: 35px;
 	font-family: 'Roboto Condensed', sans-serif;
 	line-height: 1.5em;
+}
 
-	/*padding-top: 7%;*/
-	}
-
+	
 h2 {
 	margin: 25px 0;
 	padding-top: 25px;
@@ -89,7 +86,7 @@ article {
 aside {
 	width: 45%;
 	padding-left: 40px;
-	/*vertical-align: top;*/
+	vertical-align: top;
 	}
 
 
@@ -123,9 +120,5 @@ header div {
 }
 
 
-.rsp {width: 100%;}
 
-/*.snk {
-	width: 80%;
-	margin: auto;
-}*/
+

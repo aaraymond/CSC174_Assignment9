@@ -6,8 +6,13 @@
     <meta charset="utf-8">
     <title>Shoes</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 
@@ -128,15 +133,19 @@
                         <input type="checkbox" name="styleType[]" id="flats" value="flats">
                         <label for="flats"> Flats</label><br>
 
-                        <input type="checkbox" name="styleType[]" id="athletic" value="athletic">
-                        <label for="athletic"> Athletic</label><br><br>
+                        <input type="checkbox" name="styleType[]" id="athletic2" value="athletic">
+                        <label for="athletic2"> Athletic</label><br><br>
                     </div>
 
                     <div class="question chooser">
                         <div class="questionTitle">How likely are you to purchase new shoes in the next 3 months?</div>
 
                         <label for="howLikely">0 Being Least Likely and 10 Most Likely</label><br>
-                        <input type="range" name="rangeLikely" id="howLikely" min="0" max="10"><br><br>
+
+
+                        <div class = "range-field">
+                        <input type="range" name="rangeLikely" id="howLikely" min="0" max="10">
+                        </div>
 
                         <!-- use html5 'range' attribute to make a slider from 0 to 10 -->
                         
@@ -166,7 +175,11 @@
             Information Architecture - Aaron Raymond | Design - Hillary Chun | Front End - Ali Hashim | Back End - John Denzer
         </footer>
     </div><!--.container-->
-    
+  
+
+  <!-- Downloading jQuery and Materialize file for JS -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>  
 </body>
 
 </html>
