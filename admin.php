@@ -1,3 +1,14 @@
+<?php 
+
+// Initialize the session
+	session_start();
+	if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+ 	 	header("location: login.php");
+  	exit;
+	}
+ ?>
+
+
 <?php
 	// 1. Create a database connection
 	include 'db_info.php';
@@ -27,6 +38,9 @@
 <body>
 
 	<h1>Survey db </h1>
+	<h2>Hi, <strong><?php echo $_SESSION['username']; ?></strong>. Welcome to our site.</h2>
+
+	<a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
 
 	<table>
 	<tr>
