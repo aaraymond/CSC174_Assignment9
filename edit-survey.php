@@ -1,9 +1,7 @@
 <?php 
 // Create a database connection
-	$dbhost = "localhost";
-	$dbuser = "people";
-	$dbpass = "default";
-	$dbname = "csc174";
+	include 'db_info.php';
+
 
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
