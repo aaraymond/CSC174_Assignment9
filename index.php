@@ -18,18 +18,23 @@
 
 <body>
 
+    <div class="navbar-fixed">
+        <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Home</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#Shoes">Shoes</a></li>
+                <li><a href="#Overview">Overview</a></li>
+                <li><a href="#Brands">Brands</a></li>
+                <li><a href="#Styles">Styles</a></li>
+                <li><a href="#Survey">Survey</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+
     <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#Shoes">SHOES</a></li>
-                    <li><a href="#Overview">Overview</a></li>
-                    <li><a href="#Brands">Brands</a></li>
-                    <li><a href="#Styles">Styles</a></li>
-                    <li><a href="#Survey">Survey</a></li>
-                </ul>
-            </nav>
-        </header>
+        
 
         <section id="Shoes">
             <h1>Do you shoe?</h1>

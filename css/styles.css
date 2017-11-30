@@ -67,12 +67,9 @@ a:hover {color: #c01919;}
 	max-width: 1000px;
 	height: 100%;
 	background-color: #ffffff;
-	padding: 7%;
+	padding: 15px;
 
-	border-radius: 2px; 
-	-moz-border-radius: 2px; 
-	-webkit-border-radius: 2px; 
-	border: 0px solid #800000;
+	
 	}
 
 
