@@ -60,6 +60,20 @@ a {
 
 a:hover {color: #c01919;}
 
+section {
+    min-height: 100vh; /* required - makes the sections act like pages */
+    padding-top: 6vh; /* how tall is the persistent nav bar at the top? */
+    padding-bottom: 4vh; /* typical - keep content away from the next section */
+}
+
+.navbar-fixed {
+	position: fixed; /* required - magic */
+	top: 0; /* required - makes sure the menu sits where it's supposed to sit */
+	z-index: 1000; /* required - makes sure the menu doesn't get covered by anything else */
+	width: 100%; /* required - makes the menu go all the way across the viewport */
+	letter-spacing: 1.2px;
+
+}
 
 .container {
 	margin: 0 auto;

@@ -1,37 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Shoes</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <div class="navbar-fixed">
-        <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Home</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#Shoes">Shoes</a></li>
-                <li><a href="#Overview">Overview</a></li>
-                <li><a href="#Brands">Brands</a></li>
-                <li><a href="#Styles">Styles</a></li>
-                <li><a href="#Survey">Survey</a></li>
-            </ul>
-        </div>
-        </nav>
+
+<!-- Creating a fixed navbar with hamburger menu -->
+  <nav class="navbar-fixed">
+    <div class="nav-container nav-wrapper" id="top-nav">
+      <a href="#first" class="left brand-logo">Home</a>
+
+      <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
+
+      
+      <ul class="side-nav" id="mobile-demo">
+      <li class="active"><a href="#Shoes">Shoes</a></li>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Brands">Brands</a></li>
+        <li><a href="#Styles">Styles</a></li>
+        <li><a href="#Survey">Survey</a></li>
+      </ul>
+
+      <ul class="right hide-on-med-and-down" id="nav-mobile">
+        <li class="active"><a href="#Shoes">Shoes</a></li>
+        <li><a href="#Overview">Overview</a></li>
+        <li><a href="#Brands">Brands</a></li>
+        <li><a href="#Styles">Styles</a></li>
+        <li><a href="#Survey">Survey</a></li>
+      </ul>
+
     </div>
+  </nav>
 
     <div class="container">
         
@@ -183,8 +196,19 @@
   
 
   <!-- Downloading jQuery and Materialize file for JS -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>  
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>  
+
+<!-- Smooth scrolling -->
+<script src = "js/scrolling.js"></script>
+<script> $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 300
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true, // Choose whether you can drag to open on touch screens,
+      })
+      </script>
+
 </body>
 
 </html>
