@@ -1,11 +1,65 @@
+/* From http://pangrampangram.com/charlevoix-pro/ */
+@font-face{
+	font-family: BebasNeue;
+	src: url("fonts/BebasNeueBook.otf");
+}
+
+html {
+    font-family: BebasNeue;   
+  }
+
 body {
 	background-color: white;
 }
 
-h1 {
-	margin: 3%;
+.container {
+	background-color: #ffffff;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
+.navbar-fixed {
+	background-color: #000000;
+	border: 1px solid #000000;
+}
+
+nav .active a{
+	font-family: BebasNeue;
+}
+
+h1 {
+	margin: 3%;
+	font-family: BebasNeue;
+	font-variant-caps: all-small-caps;
+	font-size: 100px;
+	letter-spacing: 6px;
+	text-align: center;
+
+}
+
+#Overview h2 {
+	font-family: BebasNeue;
+	font-size: 40px;
+	padding-top: 15px;
+	letter-spacing: 5px;
+	border-top: 1px solid #000000;
+}
+
+#Overview p {
+	font-family: sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	line-height: 1.7;
+}
+
+#Brands h2{
+	font-family: BebasNeue;
+	font-size: 80px;
+	letter-spacing: 5px;
+	text-align: center;
+	
+
+}
 
 table {
 	border: none;
@@ -28,3 +82,8 @@ tr:first-child {
 }
 
 tr:hover {background-color: #f5f5f5;}
+
+#Shoes {
+	padding: 190px;
+	background-color: #ffffff;
+}
