@@ -1,8 +1,8 @@
-/* From http://pangrampangram.com/charlevoix-pro/ */
-@font-face{
+@font-face {
 	font-family: BebasNeue;
-	src: url("fonts/BebasNeueBook.otf");
+	src: url("fonts/BebasNeueBook.otf") format("opentype"); 
 }
+
 
 html {
     font-family: BebasNeue;   
@@ -19,31 +19,59 @@ body {
 }
 
 .navbar-fixed {
+	font-family: BebasNeue;
 	background-color: #000000;
-	border: 1px solid #000000;
+	opacity:0.8;
+}
+
+.navbar-fixed a{
+	font-size: 25px;
+	letter-spacing: 3px;
 }
 
 nav .active a{
 	font-family: BebasNeue;
+	font-size: 70px;
+	color: #ffffff;
+	border-top: 5px solid #c01919;
+}
+
+.navbar-fixed a.left{
+	font-family: BebasNeue;
+	font-size: 50px;
+	padding-left: 20px;
+	letter-spacing: 15px;
 }
 
 h1 {
-	margin: 3%;
 	font-family: BebasNeue;
-	font-variant-caps: all-small-caps;
-	font-size: 100px;
+	text-transform: uppercase;
+	font-size: 80px;
 	letter-spacing: 6px;
 	text-align: center;
-
+	padding-top: 55px;
 }
 
+#Shoes {
+	padding: 190px;
+	background-color: #ffffff;
+}
+
+
+#Overview .first{
+	border-top: 1px solid #000000;
+
+}
 #Overview h2 {
 	font-family: BebasNeue;
 	font-size: 40px;
 	padding-top: 15px;
 	letter-spacing: 5px;
-	border-top: 1px solid #000000;
+	background-color: #ffffff;
+	opacity: 0.4;
+	
 }
+
 
 #Overview p {
 	font-family: sans-serif;
@@ -57,7 +85,48 @@ h1 {
 	font-size: 80px;
 	letter-spacing: 5px;
 	text-align: center;
-	
+	border-top: 1px solid #000000;
+	background-color: #ffffff;
+	opacity: 0.4;
+
+}
+
+
+#Styles .first{
+	border-top: 1px solid #000000;
+}
+
+#Styles h2 {
+	font-family: BebasNeue;
+	font-size: 80px;
+	letter-spacing: 10px;
+	background-color: #ffffff;
+	opacity: 0.4;
+}
+
+#Survey .first{
+	border-top: 1px solid #000000;
+}
+
+#Survey h2{
+	font-family: BebasNeue;
+	font-size: 80px;
+	letter-spacing: 5px;
+
+}
+
+#Survey form h3{
+	font-family: BebasNeue;
+	font-size: 40px;
+	letter-spacing: 2px;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	opacity: 0.5;
+
+
+}
+
+#Survey form{
 
 }
 
@@ -78,12 +147,8 @@ table, th, td {
 tr:first-child {
 	background-color: black;
 	color: white;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: BebasNeue, sans-serif;
 }
 
 tr:hover {background-color: #f5f5f5;}
 
-#Shoes {
-	padding: 190px;
-	background-color: #ffffff;
-}

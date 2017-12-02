@@ -56,12 +56,12 @@
         </section>
 
         <section id="Overview">
-            <h2>About The Site</h2>
+            <h2 class="first">About The Site</h2>
             <p>Welcome to our site! If you would like to read a brief history of shoes, learn the top current brands or most common styles please continue reading. Otherwise, feel free to head down to the <a href="#Survey">Survey</a>.</p>
 
             <h2>Definition</h2>
             <p>shoe | SHo͞o | - noun</p>
-            <p>a covering for the foot, typically made of leather, having a sturdy      sole and not reaching above the ankle.</p>
+            <p>a covering for the foot, typically made of leather, having a sturdy sole and not reaching above the ankle.</p>
             <p>Source: New Oxford American Dictionary (Second Edition).</p>
 
             <h2>History</h2>
@@ -85,7 +85,7 @@
 
         <section id="Styles">
             <section>
-                <h2>Men's</h2>
+                <h2 class="first">Men's</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <ul>
                     <li>Dress</li>
@@ -106,7 +106,7 @@
         
 
         <section id="Survey">
-            <h2>Shoe Survey</h2>
+            <h2 class="first">Shoe Survey</h2>
 
             <form method="post">
                 <fieldset>
