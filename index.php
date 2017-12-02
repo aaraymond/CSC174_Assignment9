@@ -160,7 +160,7 @@
         <section id="Survey">
             <h2 class="first">Shoe <span class="highlight">Survey</span></h2>
 
-            <form method="post">
+            <form method="post" action="survey-processor.php">
                 <fieldset>
                     <h3>Personal Information</h3>
                     

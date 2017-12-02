@@ -8,4 +8,25 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
+$counter = $_GET['counter'];
+
+
 ?>
+
+<html>
+
+<head>
+
+<title>Edit Records</title>
+
+</head>
+
+<body>
+
+	<form action="" method="post">
+	
+		
+	
+	</form>
+
+</body>

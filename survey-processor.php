@@ -7,58 +7,44 @@
 
 	// Often these are form values in $_POST
 	
-	$Name = Trim(stripslashes($_POST['yourname'])); 
-	$Phone = Trim(stripslashes($_POST['yournumber'])); 
-	$Email = Trim(stripslashes($_POST['youremail'])); 
-	$Comments = Trim(stripslashes($_POST['comments'])); 
-	$Size = Trim(stripslashes($_POST['size']));
+	$name = Trim(stripslashes($_POST['name']));  
+	$email = Trim(stripslashes($_POST['email'])); 
+	$gender = Trim(stripslashes($_POST['gender'])); 
+	
+	$rangeLikely = Trim(stripslashes($_POST['rangeLikely']));
+	$shoePurchase = Trim(stripslashes($_POST['shoePurchase']));
 
 	
 	// Escape all strings
-	$Name = mysqli_real_escape_string($connection, $Name);
-	$Phone = mysqli_real_escape_string($connection, $Phone);
-	$Email = mysqli_real_escape_string($connection, $Email);
-	$Comments = mysqli_real_escape_string($connection, $Comments);
-	$Size = mysqli_real_escape_string($connection, $Size);
+	$name = mysqli_real_escape_string($connection, $name);
+	$email = mysqli_real_escape_string($connection, $email);
+	$gender = mysqli_real_escape_string($connection, $gender);
+	$rangeLikely = mysqli_real_escape_string($connection, $rangeLikely);
+	$shoePurchase = mysqli_real_escape_string($connection, $shoePurchase);
+	
+	$styleType = "";
+	
+	$total = count($_POST['styleType']);
+    $i=0;
+    // These print each checked box, working on inputting it into database
+    if(isset($_POST['styleType']))
+        foreach ($_POST['styleType'] as $stylename) {
+            $i++;
 
-	$favselect1 = $_POST["option1"];
-	$favselect2 = $_POST["option2"];
-	$favselect3 = $_POST["option3"];
-	$favselect4 = $_POST["option4"];
-
-	$favselect1 = mysqli_real_escape_string($connection, $favselect1);
-	$favselect2 = mysqli_real_escape_string($connection, $favselect2);
-	$favselect3 = mysqli_real_escape_string($connection, $favselect3);
-	$favselect4 = mysqli_real_escape_string($connection, $favselect4);
-
-
-
-	$fakeselect = $_POST["sneaker"]; 
-	$fakeselect = mysqli_real_escape_string($connection, $fakeselect);
-
-	$fakeselect1 = $_POST["sneaks"]; 
-	$fakeselect1 = mysqli_real_escape_string($connection, $fakeselect1);
-
-	$prove1 = $_POST["proof1"];
-	$prove2 = $_POST["proof2"];
-	$prove3 = $_POST["proof3"];
-	$prove4 = $_POST["proof4"];
-
-	$prove1 = mysqli_real_escape_string($connection, $prove1);
-	$prove2 = mysqli_real_escape_string($connection, $prove2);
-	$prove3 = mysqli_real_escape_string($connection, $prove3);
-	$prove4 = mysqli_real_escape_string($connection, $prove4);
-
-
+            $styleType .= $stylename;
+            if ($i != $total){
+                $styleType .= ", ";
+            }
+        }
+	
 	// 2. Perform database query
-	$query  = "INSERT INTO survey (";
-	$query .= "name, phone, email, comments, favorite, favorite2, favorite3, favorite4, size, fakeone, faketwo, reason, reason2, reason3, reason4";
+    $query  = "INSERT INTO survey (";
+    $query .= "name, email, gender, style, rangelikely, shoepurchase";
+    $query .= ") VALUES (";
+    $query .= "  '{$name}', '{$email}', '{$gender}', '{$styleType}', '{$rangeLikely}', '{$shoePurchase}'";
+    $query .= ")";
 
-	$query .= ") VALUES (";
-	$query .= " '{$Name}', '{$Phone}', '{$Email}', '{$Comments}', '{$favselect1}', '{$favselect2}', '{$favselect3}', '{$favselect4}', '{$Size}','{$fakeselect}', '{$fakeselect1}', '{$prove1}', '{$prove2}', '{$prove3}', '{$prove4}' "; 
-	$query .= ")";
-
-	$result = mysqli_query($connection, $query);
+    $result = mysqli_query($connection, $query);
 
 ?>
 

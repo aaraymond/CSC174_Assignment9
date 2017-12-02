@@ -51,13 +51,12 @@
 	<tr>
 			<th>ID</th>
 			<th>Name</th>
-			<th>Phone Number</th>
 			<th>Email</th>
-			<th>Comments</th> 
-			<th>Fav Sneaker</th>
-			<th>Shoe size</th>
-			<th>Fakes</th>
-			<th>Reason</th>
+			<th>Gender</th> 
+			<th>Style Types</th>
+			<th>Likeliness</th>
+			<th>Shoe Purchases</th>
+
 		</tr>
 
 <?php
@@ -71,32 +70,19 @@
 
 <tr>
 			<td><?php echo $pages["counter"]; ?></td>
-		
-		
-			
-			<td><?php echo $pages["name"]; ?></td>
-		
-		
-		
-			<td><?php echo $pages["phone"]; ?></td>
-		
-		
-			
+			<td><?php echo $pages["name"]; ?></td>		
 			<td><?php echo $pages["email"]; ?></td>
-		
-	
-			<td><?php echo $pages["comments"]; ?></td>
-			<td><?php echo $pages["favorite"]; ?></td>
-			<td><?php echo $pages["size"]; ?></td>
-			<td><?php echo $pages["fakeone"]; ?></td>
-			<td><?php echo $pages["reason"]; ?></td>
+			<td><?php echo $pages["gender"]; ?></td>
+			<td><?php echo $pages["style"]; ?></td>
+			<td><?php echo $pages["rangelikely"]; ?></td>
+			<td><?php echo $pages["shoepurchase"]; ?></td>
 			
 			<td>
-  				<a href="editform.php">
-    				<div style="height:100%;width:100%">
+			
+  			<a href="editform.php">
+  
       					Edit
-    				</div>
-  				</a>
+  			</a>
 
 			<a href='deleteform.php?counter="<?php echo $pages['counter']; ?>"&name=<?php echo $pages['name']; ?>' onclick="return confirm('Delete this?');">Delete</a>
  				
