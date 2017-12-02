@@ -244,8 +244,8 @@
             </form>
         </section>
 
-        <footer>
-            Information Architecture - Aaron Raymond | Design - Hillary Chun | Front End - Ali Hashim | Back End - John Denzer
+        <footer class="end">
+            <div class="info">Information Architecture - <span class="highlight">Aaron</span> Raymond | Design - <span class="highlight">Hillary</span> Chun | Front End - <span class="highlight">Ali</span> Hashim | Back End - <span class="highlight">John</span> Denzer</div>
         </footer>
     </div><!--.container-->
   
