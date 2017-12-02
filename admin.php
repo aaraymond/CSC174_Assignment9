@@ -58,7 +58,7 @@
 			<th>Shoe size</th>
 			<th>Fakes</th>
 			<th>Reason</th>
-			</tr>
+		</tr>
 
 <?php
 	// 3. Use returned data (if any)
@@ -92,13 +92,7 @@
 			<td><?php echo $pages["reason"]; ?></td>
 			
 			<td>
-  					<button class="edit_button btn waves-effect waves-light" id="edit_button<?php echo $pages['counter'];?>" value="edit" onclick="edit_row('<?php echo $pages['counter'];?>');">Edit
-   				</button>
-   				<button  class="save_button btn waves-effect waves-light" id="save_button<?php echo $pages['counter'];?>" value="save" onclick="save_row('<?php echo $pages['counter'];?>'); Materialize.toast('Saved', 4000)">Save
-   				</button>
-
-   				<button class="delete_button btn waves-effect waves-light" id="delete_button<?php echo $pages['counter'];?>" value="delete" onclick="delete_row('<?php echo $pages['counter'];?>'); Materialize.toast('Delete', 4000)">Delete
-   				</button>
+  				
 			</td>
 </tr>
 		
