@@ -9,7 +9,6 @@ if($link === false){
 }
 
 $counter = $_GET['counter'];
-
  
 // Attempt delete query execution
 $sql = "DELETE FROM survey WHERE counter=$counter";

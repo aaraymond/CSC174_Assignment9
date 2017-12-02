@@ -98,7 +98,7 @@
     				</div>
   				</a>
 
-				<a href='deleteform.php?counter="<?php echo $pages['counter']; ?>"'>Delete</a>
+				<a href='deleteform.php?counter="<?php echo $pages['counter']; ?>"' onclick="return confirm('Delete this?');">Delete</a>
  				
 
 			</td>
