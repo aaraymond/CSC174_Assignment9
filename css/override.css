@@ -67,6 +67,7 @@ h1 span.highlight{
 
 #Overview .first{
 	border-top: 1px solid #000000;
+	padding-top: 90px;
 
 }
 
@@ -75,10 +76,18 @@ h1 span.highlight{
 	font-size: 40px;
 	padding-top: 15px;
 	letter-spacing: 5px;
-	color: #b3b3b3;
+	color: #8c8c8c;
 	
 }
 
+#Overview h2 span.highlight{
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #c01919;
+
+
+}
 
 #Overview p {
 	font-family: sans-serif;
@@ -87,41 +96,56 @@ h1 span.highlight{
 	line-height: 1.7;
 }
 
+
 #Brands h2{
 	font-family: BebasNeue;
-	font-size: 80px;
+	font-size: 50px;
 	letter-spacing: 8px;
 	word-spacing: 20px;
 	text-align: center;
-	padding-top: 70px;
-	border-top: 1px solid #000000;
-	color: #b3b3b3;
+	padding-top: 90px;
+	border-top: 1px solid #ffffff;
+	color: #8c8c8c;
 
 }
 
 #Brands h2 span.highlight{
-	color: #4d4d4d;
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #c01919;
 }
 
 #Styles .first{
-	border-top: 1px solid #000000;
+	border-top: 1px solid #ffffff;
+	padding-top: 20px;
 }
 
 #Styles h2 {
 	font-family: BebasNeue;
 	font-size: 80px;
 	letter-spacing: 10px;
-	color: #b3b3b3;
+	color: #8c8c8c;
 }
 
+#Styles h2 span.highlight{
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #c01919;
+
+}
 #Survey .first{
 	border-top: 1px solid #000000;
+	padding-top: 30px;
+	padding-bottom: 20px;
 }
 
 #Survey h2{
 	font-family: BebasNeue;
-	font-size: 80px;
+	font-size: 50px;
 	letter-spacing: 5px;
+	color: #8c8c8c;
 
 }
 
@@ -135,7 +159,11 @@ h1 span.highlight{
 
 }
 
-#Survey form{
+#Survey h2 span.highlight{
+	color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #c01919;
 
 }
 
