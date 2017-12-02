@@ -9,11 +9,12 @@ if($link === false){
 }
 
 $counter = $_GET['counter'];
+$name = $_GET['name'];
  
 // Attempt delete query execution
 $sql = "DELETE FROM survey WHERE counter=$counter";
 if(mysqli_query($link, $sql)){
-    echo "Records were deleted successfully.";
+    echo "The records associated with $name were deleted successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
