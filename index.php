@@ -110,20 +110,24 @@
                 <h2 class="first"><span class="highlight">Men</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <div class="row">  
-                   <ul>
-                        <div class="col s4">
-                            <img class="responsive-img" src="images/dressMen.png" alt="Dress">
-                            <div class="middle">
-                                <div class="text">Dress</div>
-                            </div>
+                    <div class="col s4">
+                        <img class="responsive-img" src="images/dressMen.png" alt="Dress">
+                        <div class="middle">
+                            <div class="text">Dress</div>
                         </div>
-                        <div class="col s4">
-                            <li>Casual</li>
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img" src="images/mensCasual.png" alt="Casual">
+                        <div class="middle">
+                            <div class="text">Casual</div>
                         </div>
-                        <div class="col s4">
-                            <li>Athletic</li>
+                    </div>
+                    <div class="col s4">
+                        <img class="responsive-img" src="images/mensAthletic.png" alt="Athletic">
+                        <div class="middle">
+                            <div class="text">Athletic</div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
            
             <section>
