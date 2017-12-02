@@ -102,17 +102,20 @@
                 </div>
             </div>
 
-            <p>Source: Fortune.com</p>
+            <!--Source: Fortune.com-->
         </section>
 
         <section id="Styles">
-            <section>
+            
                 <h2 class="first"><span class="highlight">Men</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <div class="row">  
                    <ul>
                         <div class="col s4">
-                            <li>Dress</li>
+                            <img class="responsive-img" src="images/dressMen.png" alt="Dress">
+                            <div class="middle">
+                                <div class="text">Dress</div>
+                            </div>
                         </div>
                         <div class="col s4">
                             <li>Casual</li>
@@ -122,15 +125,23 @@
                         </div>
                     </ul>
                 </div>
-            </section>
+           
             <section>
                 <h2><span class="highlight">Women</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
-                <ul>
-                    <li>Heels</li>
-                    <li>Flats</li>
-                    <li>Athletic</li>
-                </ul>
+                <div class="row">  
+                   <ul>
+                        <div class="col s4">
+                            <li>Heels</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Flats</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Athletic</li>
+                        </div>
+                    </ul>
+                </div>
             </section>
         </section>
         

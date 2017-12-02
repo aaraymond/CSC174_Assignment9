@@ -183,7 +183,7 @@ h1 span.highlight{
 
 #Styles h2 {
 	font-family: BebasNeue;
-	font-size: 80px;
+	font-size: 70px;
 	letter-spacing: 10px;
 	color: #8c8c8c;
 }
@@ -206,8 +206,47 @@ h1 span.highlight{
 
 }
 
-#Styles .row .col{
-	
+#Styles .row .col {
+	position: relative;
+    
+}
+
+#Styles .row .col img{
+	width: 140%;
+	padding: 30px;
+	padding-top: 80px;
+	padding-bottom: 10px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+
+}
+
+#Styles .row .col .middle {
+	opacity: 0;
+	transition: .5s ease;
+ 	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+#Styles .row .col .text {
+	font-family: BebasNeue;
+ 	color: black;
+  	font-size: 37px;
+  	letter-spacing: 2px;
+  	text-align: center;
+  	
+}
+
+#Styles .row .col:hover img{
+	opacity:0.2;
+}
+
+#Styles .row .col:hover .middle{
+	opacity: 1;
 }
 
 /* Survey Section */
