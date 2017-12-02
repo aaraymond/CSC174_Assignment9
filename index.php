@@ -72,13 +72,23 @@
             <h2>Popular <span class="highlight">Brands</span> Today</h2>
             <!-- Possibly make a horizontal grid layout and use the brand logo images instead of words, then on hover display the brand name. -->
             
-            <img src="images/logoNike.png" alt="Nike Logo">
+            <div class="row">
+                <div class="col s3">
+                    <img src="images/logoNike.png" alt="Nike Logo">
+                </div>
 
-            <img src="images/logoAdidas.png" alt="Adidas Logo">
+                <div class="col s3">
+                    <img src="images/logoAdidas.png" alt="Adidas Logo">
+                </div> 
 
-            <img src="images/logoJordan.png" alt="Jordan Logo">
+                <div class="col s3">
+                    <img src="images/logoJordan.png" alt="Jordan Logo">
+                </div> 
 
-            <img src="images/logoConverse.png" alt="Converse Logo">
+                <div class="col s3">
+                    <img src="images/logoConverse.png" alt="Converse Logo">
+                </div>
+            </div>
 
             <p>Source: Fortune.com</p>
         </section>
@@ -87,11 +97,19 @@
             <section>
                 <h2 class="first"><span class="highlight">Men</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
-                <ul>
-                    <li>Dress</li>
-                    <li>Casual</li>
-                    <li>Athletic</li>
-                </ul>
+                <div class="row">  
+                   <ul>
+                        <div class="col s4">
+                            <li>Dress</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Casual</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Athletic</li>
+                        </div>
+                    </ul>
+                </div>
             </section>
             <section>
                 <h2><span class="highlight">Women</span>'s</h2>

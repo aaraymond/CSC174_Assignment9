@@ -14,9 +14,10 @@ body {
 
 .container {
 	background-color: #ffffff;
-	padding-left: 100px;
-	padding-right: 100px;
+	
 }
+
+/* Navbar Section */
 
 .navbar-fixed {
 	font-family: BebasNeue;
@@ -31,7 +32,7 @@ body {
 
 nav .active a{
 	font-family: BebasNeue;
-	font-size: 70px;
+	font-size: 60px;
 	color: #ffffff;
 	border-top: 5px solid #c01919;
 }
@@ -41,6 +42,14 @@ nav .active a{
 	font-size: 50px;
 	padding-left: 20px;
 	letter-spacing: 15px;
+}
+
+
+/* Shoes Section */
+
+#Shoes {
+	padding: 190px;
+	background-color: #ffffff;
 }
 
 h1 {
@@ -59,12 +68,14 @@ h1 span.highlight{
 
 }
 
-#Shoes {
-	padding: 190px;
-	background-color: #ffffff;
+/* Overview Section */
+
+#Overview {
+	padding-left: 130px;
+	padding-right: 130px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
-
-
 #Overview .first{
 	border-top: 1px solid #000000;
 	padding-top: 90px;
@@ -74,7 +85,7 @@ h1 span.highlight{
 #Overview h2 {
 	font-family: BebasNeue;
 	font-size: 40px;
-	padding-top: 15px;
+	padding-top: 25px;
 	letter-spacing: 5px;
 	color: #8c8c8c;
 	
@@ -86,25 +97,28 @@ h1 span.highlight{
 	border-bottom-width: 4px;
 	border-bottom-color: #c01919;
 
-
 }
 
 #Overview p {
 	font-family: sans-serif;
 	font-size: 15px;
-	letter-spacing: 1px;
-	line-height: 1.7;
+	letter-spacing: 1.6px;
+	line-height: 1.6;
 }
 
+/* Brands Section */
+
+#Brands {
+	padding:30px;
+}
 
 #Brands h2{
 	font-family: BebasNeue;
 	font-size: 50px;
-	letter-spacing: 8px;
-	word-spacing: 20px;
-	text-align: center;
-	padding-top: 90px;
-	border-top: 1px solid #ffffff;
+	letter-spacing: 6px;
+	word-spacing: 10px;
+	padding-top: 80px;
+	border-top: 1px solid #000000;
 	color: #8c8c8c;
 
 }
@@ -116,9 +130,18 @@ h1 span.highlight{
 	border-bottom-color: #c01919;
 }
 
+#Brands .row .col img{
+	width: 130%;
+	padding: 30px;
+	padding-top: 80px;
+	padding-bottom: 10px;
+}
+
+/* Styles Section */
+
 #Styles .first{
-	border-top: 1px solid #ffffff;
-	padding-top: 20px;
+	border-top: 1px solid #000000;
+	padding-top: 40px;
 }
 
 #Styles h2 {
@@ -135,6 +158,23 @@ h1 span.highlight{
 	border-bottom-color: #c01919;
 
 }
+
+#Styles li{
+	font-family: sans-serif;
+	font-size: 15px;
+	letter-spacing: 3px;
+	padding: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+#Styles .row .col{
+	
+}
+
+/* Survey Section */
+
 #Survey .first{
 	border-top: 1px solid #000000;
 	padding-top: 30px;
