@@ -130,12 +130,49 @@ h1 span.highlight{
 	border-bottom-color: #c01919;
 }
 
+#Brands .row .col {
+	position: relative;
+    
+}
+
 #Brands .row .col img{
-	width: 130%;
+	width: 140%;
 	padding: 30px;
 	padding-top: 80px;
 	padding-bottom: 10px;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	opacity: 1;
+
 }
+
+#Brands .row .col .middle {
+	opacity: 0;
+	transition: .5s ease;
+ 	position: absolute;
+ 	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+#Brands .row .col .text {
+	font-family: BebasNeue;
+ 	color: #c01919;
+  	font-size: 37px;
+  	letter-spacing: 2px;
+  	text-align: center;
+  	
+}
+
+#Brands .row .col:hover img{
+	opacity:0.2;
+}
+
+#Brands .row .col:hover .middle{
+	opacity: 1;
+}
+
 
 /* Styles Section */
 

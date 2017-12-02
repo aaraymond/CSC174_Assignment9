@@ -74,19 +74,31 @@
             
             <div class="row">
                 <div class="col s3">
-                    <img src="images/logoNike.png" alt="Nike Logo">
+                    <img class="responsive-img" src="images/logoNike.png" alt="Nike Logo">
+                    <div class="middle">
+                         <div class="text">Nike</div>
+                    </div>
                 </div>
 
                 <div class="col s3">
-                    <img src="images/logoAdidas.png" alt="Adidas Logo">
+                    <img class="responsive-img" src="images/logoAdidas.png" alt="Adidas Logo">
+                    <div class="middle">
+                         <div class="text">Adidas</div>
+                    </div>
                 </div> 
 
                 <div class="col s3">
-                    <img src="images/logoJordan.png" alt="Jordan Logo">
+                    <img class="responsive-img" src="images/logoJordan.png" alt="Jordan Logo">
+                    <div class="middle">
+                         <div class="text">Jordan</div>
+                    </div>
                 </div> 
 
                 <div class="col s3">
-                    <img src="images/logoConverse.png" alt="Converse Logo">
+                    <img class="responsive-img" src="images/logoConverse.png" alt="Converse Logo">
+                    <div class="middle">
+                         <div class="text">Converse</div>
+                    </div>
                 </div>
             </div>
 
