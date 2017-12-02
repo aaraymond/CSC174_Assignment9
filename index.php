@@ -224,8 +224,10 @@
                         <label for="sixToYear"> 6 months to a year ago</label><br>
 
                         <input type="radio" name="shoePurchase" id="overYear" value="More than a year ago">
-                        <label for="overYear"> More than a year ago</label><br>
+                        <label for="overYear"> More than a year ago</label><br><br>
                     </div>
+
+                    <button type="submit" name="submit">Submit</button>
 
                 </fieldset>
             </form>
