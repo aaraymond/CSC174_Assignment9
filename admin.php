@@ -110,7 +110,7 @@
 	</table>
 
 	<br>
-	<a href="index.php">Back to the SURVEY</a>
+	<a href="index.php">Click Here</a> to return to the suvery
 
 </body>
 </html>
