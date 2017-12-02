@@ -109,7 +109,7 @@
 	</table>
 
 	<br>
-	<a href="contact.html">Back to the SURVEY</a>
+	<a href="index.php">Back to the SURVEY</a>
 
 </body>
 </html>
