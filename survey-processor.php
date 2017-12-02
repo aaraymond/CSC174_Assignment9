@@ -53,7 +53,9 @@
 <head>
 	<title> Survey Database Insert</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
@@ -63,7 +65,7 @@
 
 <?php
 	if ($result) {
-		echo "Success! - the query didn't error-out";
+		echo "Success! Thank you for completing the survey $name!";
 
 ?>
 
@@ -75,8 +77,8 @@
 		die("Database query failed.");
 	}
 ?>
-
-	<a href="admin.php">Continue</a>
+	<br>
+	<a href="index.php">Back to the Survey</a>
 
 </body>
 </html>

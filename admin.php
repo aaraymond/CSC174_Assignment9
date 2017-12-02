@@ -31,7 +31,7 @@
 <head>
 	<title>Survey DB</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+ 
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 	
