@@ -34,6 +34,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
 </head>
 <body>
 
@@ -87,19 +92,13 @@
 			<td><?php echo $pages["reason"]; ?></td>
 			
 			<td>
-  					<a href="editform.html">
-    				<div style="height:100%;width:100%">
-      					Edit
-    				</div>
-  					</a>
-			
-			</td>
-			<td>
-  				<a href="deleteform.html">
-    				<div style="height:100%;width:100%">
-      				Delete
-    			</div>
- 				 </a>
+  					<button class="edit_button btn waves-effect waves-light" id="edit_button<?php echo $pages['counter'];?>" value="edit" onclick="edit_row('<?php echo $pages['counter'];?>');">Edit
+   				</button>
+   				<button  class="save_button btn waves-effect waves-light" id="save_button<?php echo $pages['counter'];?>" value="save" onclick="save_row('<?php echo $pages['counter'];?>'); Materialize.toast('Saved', 4000)">Save
+   				</button>
+
+   				<button class="delete_button btn waves-effect waves-light" id="delete_button<?php echo $pages['counter'];?>" value="delete" onclick="delete_row('<?php echo $pages['counter'];?>'); Materialize.toast('Delete', 4000)">Delete
+   				</button>
 			</td>
 </tr>
 		
