@@ -92,7 +92,15 @@
 			<td><?php echo $pages["reason"]; ?></td>
 			
 			<td>
-  				
+  				<a href="editform.php">
+    				<div style="height:100%;width:100%">
+      					Edit
+    				</div>
+  				</a>
+
+				<a href='deleteform.php?counter="<?php echo $pages['counter']; ?>"'>Delete</a>
+ 				
+
 			</td>
 </tr>
 		
