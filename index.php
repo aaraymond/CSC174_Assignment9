@@ -51,7 +51,7 @@
         
 
         <section id="Shoes">
-            <h1>Do you shoe?</h1>
+            <h1>Do you <span class="highlight">shoe</span>?</h1>
             <!-- This section will include a banner or graphic with two buttons, take survey or read more displayed in the terminal area. -->
         </section>
 
@@ -69,7 +69,7 @@
         </section>
 
         <section id="Brands">
-            <h2>Popular Brands Today</h2>
+            <h2>Popular <span class="highlight">Brands</span> Today</h2>
             <!-- Possibly make a horizontal grid layout and use the brand logo images instead of words, then on hover display the brand name. -->
             
             <img src="images/logoNike.png" alt="Nike Logo">

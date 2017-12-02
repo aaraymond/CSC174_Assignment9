@@ -52,6 +52,13 @@ h1 {
 	padding-top: 55px;
 }
 
+h1 span.highlight{
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+	border-bottom-color: #c01919;
+
+}
+
 #Shoes {
 	padding: 190px;
 	background-color: #ffffff;
@@ -62,13 +69,13 @@ h1 {
 	border-top: 1px solid #000000;
 
 }
+
 #Overview h2 {
 	font-family: BebasNeue;
 	font-size: 40px;
 	padding-top: 15px;
 	letter-spacing: 5px;
-	background-color: #ffffff;
-	opacity: 0.4;
+	color: #b3b3b3;
 	
 }
 
@@ -83,14 +90,18 @@ h1 {
 #Brands h2{
 	font-family: BebasNeue;
 	font-size: 80px;
-	letter-spacing: 5px;
+	letter-spacing: 8px;
+	word-spacing: 20px;
 	text-align: center;
+	padding-top: 70px;
 	border-top: 1px solid #000000;
-	background-color: #ffffff;
-	opacity: 0.4;
+	color: #b3b3b3;
 
 }
 
+#Brands h2 span.highlight{
+	color: #4d4d4d;
+}
 
 #Styles .first{
 	border-top: 1px solid #000000;
@@ -100,8 +111,7 @@ h1 {
 	font-family: BebasNeue;
 	font-size: 80px;
 	letter-spacing: 10px;
-	background-color: #ffffff;
-	opacity: 0.4;
+	color: #b3b3b3;
 }
 
 #Survey .first{
@@ -122,7 +132,6 @@ h1 {
 	padding-left: 5px;
 	padding-bottom: 10px;
 	opacity: 0.5;
-
 
 }
 
