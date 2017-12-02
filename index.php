@@ -51,17 +51,17 @@
         
 
         <section id="Shoes">
-            <h1>Do you shoe?</h1>
+            <h1>Do you <span class="highlight">shoe</span>?</h1>
             <!-- This section will include a banner or graphic with two buttons, take survey or read more displayed in the terminal area. -->
         </section>
 
         <section id="Overview">
-            <h2>About The Site</h2>
+            <h2 class="first"><span class="highlight">About</span> The Site</h2>
             <p>Welcome to our site! If you would like to read a brief history of shoes, learn the top current brands or most common styles please continue reading. Otherwise, feel free to head down to the <a href="#Survey">Survey</a>.</p>
 
             <h2>Definition</h2>
             <p>shoe | SHo͞o | - noun</p>
-            <p>a covering for the foot, typically made of leather, having a sturdy      sole and not reaching above the ankle.</p>
+            <p>a covering for the foot, typically made of leather, having a sturdy sole and not reaching above the ankle.</p>
             <p>Source: New Oxford American Dictionary (Second Edition).</p>
 
             <h2>History</h2>
@@ -69,32 +69,62 @@
         </section>
 
         <section id="Brands">
-            <h2>Popular Brands Today</h2>
+            <h2>Popular <span class="highlight">Brands</span> Today</h2>
             <!-- Possibly make a horizontal grid layout and use the brand logo images instead of words, then on hover display the brand name. -->
             
-            <img src="images/logoNike.png" alt="Nike Logo">
+            <div class="row">
+                <div class="col s3">
+                    <img class="responsive-img" src="images/logoNike.png" alt="Nike Logo">
+                    <div class="middle">
+                         <div class="text">Nike</div>
+                    </div>
+                </div>
 
-            <img src="images/logoAdidas.png" alt="Adidas Logo">
+                <div class="col s3">
+                    <img class="responsive-img" src="images/logoAdidas.png" alt="Adidas Logo">
+                    <div class="middle">
+                         <div class="text">Adidas</div>
+                    </div>
+                </div> 
 
-            <img src="images/logoJordan.png" alt="Jordan Logo">
+                <div class="col s3">
+                    <img class="responsive-img" src="images/logoJordan.png" alt="Jordan Logo">
+                    <div class="middle">
+                         <div class="text">Jordan</div>
+                    </div>
+                </div> 
 
-            <img src="images/logoConverse.png" alt="Converse Logo">
+                <div class="col s3">
+                    <img class="responsive-img" src="images/logoConverse.png" alt="Converse Logo">
+                    <div class="middle">
+                         <div class="text">Converse</div>
+                    </div>
+                </div>
+            </div>
 
             <p>Source: Fortune.com</p>
         </section>
 
         <section id="Styles">
             <section>
-                <h2>Men's</h2>
+                <h2 class="first"><span class="highlight">Men</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
-                <ul>
-                    <li>Dress</li>
-                    <li>Casual</li>
-                    <li>Athletic</li>
-                </ul>
+                <div class="row">  
+                   <ul>
+                        <div class="col s4">
+                            <li>Dress</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Casual</li>
+                        </div>
+                        <div class="col s4">
+                            <li>Athletic</li>
+                        </div>
+                    </ul>
+                </div>
             </section>
             <section>
-                <h2>Women's</h2>
+                <h2><span class="highlight">Women</span>'s</h2>
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <ul>
                     <li>Heels</li>
@@ -106,7 +136,7 @@
         
 
         <section id="Survey">
-            <h2>Shoe Survey</h2>
+            <h2 class="first">Shoe <span class="highlight">Survey</span></h2>
 
             <form method="post">
                 <fieldset>
