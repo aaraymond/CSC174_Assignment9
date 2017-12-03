@@ -1,5 +1,4 @@
 // From: https://github.com/trungk18/Change-Navigation-Active-Class-on-Page-Scroll
-document.write("hello")
 $(document).ready(function () {
 
             // From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
