@@ -171,10 +171,10 @@
                     <h3>Personal Information</h3>
                     
                     <label for="name">Name: </label>
-                    <input type="text" name="name" id="name" required><br>
+                    <input class="input-field" type="text" name="name" id="name" required><br>
                     
                     <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" required><br><br>
+                    <input class="input-field" type="email" name="email" id="email" required><br><br>
 
                     <div class="questionTitle">Please Select Your Gender:</div>
 
