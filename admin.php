@@ -79,7 +79,7 @@
 			
 			<td>
 			
-  			<a href="editform.php">
+  			<a href='editform.php?counter=<?php echo $pages['counter']; ?>&name=<?php echo $pages['name']; ?>'>
   
       					Edit
   			</a>

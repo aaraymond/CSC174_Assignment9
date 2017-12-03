@@ -10,7 +10,6 @@ if($link === false){
 
 $counter = $_GET['counter'];
 
-
 ?>
 
 <html>
@@ -23,10 +22,8 @@ $counter = $_GET['counter'];
 
 <body>
 
-	<form action="" method="post">
 	
-		
-	
-	</form>
 
 </body>
+
+</html>
