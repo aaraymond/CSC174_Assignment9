@@ -3,18 +3,18 @@
 	include 'db_info.php';
 	$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
  
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+	// Check connection
+	if($link === false){
+		die("ERROR: Could not connect. " . mysqli_connect_error());
+	}
 
 $counter=$_GET['counter'];
-$name=$_GET['name'];
-$email=$_GET['email'];
-$gender=$_GET['gender'];
-$style=$_GET['style'];
-$rangelikely=$_GET['rangelikely'];
-$shoepurchase=$_GET['shoepurchase'];
+
+$sql= "SELECT * FROM survey WHERE counter='$counter'";
+$gather = mysqli_query($link, $sql);
+
+	
+
 
 
 ?>
@@ -31,29 +31,27 @@ $shoepurchase=$_GET['shoepurchase'];
 	
 <h1>Edit Records</h1>
 
-<form action="" method="post">
+<form method="post">
 
 	<div> 
-		Name: <input type="text" name="name" value="<?php echo $name; ?>"/></br></br>
+	
+	<?php while($row = mysqli_fetch_assoc($gather)){ ?>
+		Name: <input type="text" name="name" value="<?php echo $row['name']; ?>"/></br></br>
 		
-		Email: <input type="text" name="email" value="<?php echo $email; ?>"/></br></br>
+		Email: <input type="text" name="email" value="<?php echo $row['email'];  ?>"/></br></br>
 		
-		Gender: <input type="text" name="gender" value="<?php echo $gender; ?>"/></br></br>
+		Gender: <input type="text" name="gender" value="<?php echo $row['gender']; ?>"/></br></br>
 		
-		Styles: <input type="text" name="style" value="<?php echo $style; ?>"/></br></br>
+		Styles: <input type="text" name="style" value="<?php echo $row['style']; ?>"/></br></br>
 		
-		Likelihood to buy: <input type="text" name="rangelikely" value="<?php echo $rangelikely; ?>"/></br></br>
+		Likelihood to buy (0-10): <input type="text" name="rangelikely" value="<?php echo $row['rangelikely']; ?>"/></br></br>
 		
-		Recent Purchase: <input type="text" name="shoepurchase" value="<?php echo $shoepurchase; ?>"/></br></br>
+		Recent Purchase: <input type="text" name="shoepurchase" value="<?php echo $row['shoepurchase']; }?>"/></br></br>
 		
-		<button type="submit" name="submit">Update Records for ID #<?php echo $counter ?></button>
+		<button type="submit" name="submit" value="submit" onclick="location.href = 'admin.php';">Update Records for ID #<?php echo $counter ?></button>
 	</div>
 
 </form>
-
-</body>
-
-</html>
 
 <?php
 	include 'db_info.php';
@@ -83,21 +81,12 @@ $shoepurchase=$_GET['shoepurchase'];
 	
 
 	
-?>
-
-<?php
-if ($result) {
-?>
-    <div>
-        The record <?php echo $_GET['counter'] ?> has been updated.
-    </div>
-
-<?php
-} else {
-    die("Database query failed.");
-}
+	
 ?>
 
 
+</body>
+
+</html>
 
 
