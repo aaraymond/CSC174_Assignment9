@@ -83,7 +83,7 @@ $gather = mysqli_query($link, $sql);
 	
 	
 ?>
-
+<a href="admin.php">Return to the admin page here</a>
 
 </body>
 
