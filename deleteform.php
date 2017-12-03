@@ -13,19 +13,14 @@ $name = $_GET['name'];
  
 // Attempt delete query execution
 $sql = "DELETE FROM survey WHERE counter=$counter";
-if(mysqli_query($link, $sql)){
-    echo "The records associated with $name were deleted successfully.";
-} else{
-    echo "ERROR: Could not execute $sql. " . mysqli_error($link);
-}
+
  
-// Close connection
-mysqli_close($link);
+
 ?>
 
 <html>
 	
-	<head>
+<head>
 		<title>Deleted Data</title>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -39,14 +34,27 @@ mysqli_close($link);
     <link rel="stylesheet" type="text/css" href="css/override.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
+</head>
 	
-    <body>
-    <p>You will be redirected back to the admin page in 3 seconds!</p>
-    <script>
+<body>
+	<div class="center-align">
+<?php 
+	if(mysqli_query($link, $sql)){
+		echo "The records associated with $name were deleted successfully.";
+	} else{
+    echo "ERROR: Could not execute $sql. " . mysqli_error($link);
+	}
+?>	
+		<p>You will be redirected back to the admin page in 3 seconds!</p>
+		
+	</div>
+	
+</body>
+
+<script>
         var timer = setTimeout(function() {
             window.location='http://localhost/CSC174_Assignment9/admin.php'
         }, 3000);
-    </script>
-</body>
+</script>
+	
 </html>
