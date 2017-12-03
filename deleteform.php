@@ -25,11 +25,11 @@ mysqli_close($link);
 
 <html>
     <body>
-    <p>You will be redirected back to the admin page in 5 seconds!</p>
+    <p>You will be redirected back to the admin page in 3 seconds!</p>
     <script>
         var timer = setTimeout(function() {
             window.location='http://localhost/CSC174_Assignment9/admin.php'
-        }, 5000);
+        }, 3000);
     </script>
 </body>
 </html>
