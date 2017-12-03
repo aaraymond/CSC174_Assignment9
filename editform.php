@@ -45,9 +45,10 @@ if(isset($_GET['counter'])){
 		
 		$counter=$_GET['counter'];
 		$sql= "SELECT * FROM survey WHERE counter=$counter";
+		$result = mysqli_query($link, $sql);
 		
-		if($sql===FALSE){
-			die(mysql_error());
+		if($result===FALSE){
+			echo mysql_error();
 		}
  
 		while($profile=mysql_fetch_array($sql)){

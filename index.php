@@ -182,7 +182,7 @@
                 <fieldset>
                     <h3>About Your Shoes</h3>
 
-                    <div class="question male">
+                    <div class="male box" style="display:none">
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="dress" value="dress">
@@ -195,7 +195,7 @@
                         <label for="athletic"> Athletic</label><br><br>
                     </div>
 
-                    <div class="question female">
+                    <div class="female box" style="display:none">
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="heels" value="heels">
@@ -262,7 +262,19 @@
       closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
       draggable: true, // Choose whether you can drag to open on touch screens,
       })
-      </script>
+</script>
+
+<!-- Hide/show divs -->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+        var inputValue = $(this).attr("value");
+        var targetBox = $("." + inputValue);
+        $(".box").not(targetBox).hide();
+        $(targetBox).show();
+    });
+});
+</script>
 
 </body>
 
