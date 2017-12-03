@@ -29,7 +29,7 @@ $(document).ready(function () {
             var currentScrollPos = $(document).scrollTop();
 
             //Iterate through all node
-            $('.right > li > a').each(function () {
+            $('ul > li > a').each(function () {
                 var curLink = $(this);
                 var refElem = $(curLink.attr('href'));
                 var navBarHeight = $('#top-nav').height()

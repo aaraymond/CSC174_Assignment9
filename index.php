@@ -23,11 +23,11 @@
 <!-- Creating a fixed navbar with hamburger menu -->
   <nav class="navbar-fixed">
     <div class="nav-container nav-wrapper" id="top-nav">
-      <a href="#first" class="left brand-logo">Home</a>
-
-      <a href="#" data-activates="mobile-demo" class="right button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile-demo" class="left button-collapse"><i class="material-icons">menu</i></a>
 
       
+       
+
       <ul class="side-nav" id="mobile-demo">
       <li class="active"><a href="#Shoes">Shoes</a></li>
         <li><a href="#Overview">Overview</a></li>
@@ -36,13 +36,19 @@
         <li><a href="#Survey">Survey</a></li>
       </ul>
 
-      <ul class="right hide-on-med-and-down" id="nav-mobile">
+      <ul class="left hide-on-med-and-down" id="nav-mobile">
         <li class="active"><a href="#Shoes">Shoes</a></li>
         <li><a href="#Overview">Overview</a></li>
         <li><a href="#Brands">Brands</a></li>
         <li><a href="#Styles">Styles</a></li>
-        <li><a href="#Survey">Survey</a></li>
+        
       </ul>
+
+      <ul class="right">
+      <li><a href="#Survey">Survey</a></li>
+    </ul>
+
+     
 
     </div>
   </nav>
@@ -258,7 +264,7 @@
 <script src = "js/scrolling.js"></script>
 <script> $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 300
-      edge: 'right', // Choose the horizontal origin
+      edge: 'left', // Choose the horizontal origin
       closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
       draggable: true, // Choose whether you can drag to open on touch screens,
       })
