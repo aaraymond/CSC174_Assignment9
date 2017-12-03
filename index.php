@@ -71,7 +71,20 @@
             <p>Source: New Oxford American Dictionary (Second Edition).</p>
 
             <h2>History</h2>
-            <p>There is a great deal of evidence to suggest that shoes have been worn by humans for tens of thousands of years but the oldest recovered example found is 10,000 years old (Source: University of Oregon - The Museum of Natural and Cultural History). The world’s oldest leather shoe is a 5,500 year old specimen found in an Armenian cave (Source: National Geographic).</p>
+            <p>There is a great deal of evidence to suggest that shoes have been worn by humans for tens of thousands of years but the oldest recovered example found is 10,000 years old (Source: University of Oregon - The Museum of Natural and Cultural History). The world’s oldest leather shoe is a 5,500 year old specimen found in an Armenian cave.</p>
+
+            <p>Up until 1850, shoes were made straight, meaning that there was no differentiation from left and right shoes. As the twentieth century approached, shoemakers improved comfort by making foot-specific shoes.</p>
+
+            <p>During the Great Depression, black and brown shoes dominated the American market. Shortly after, Oxfords became a popular male choice and cork-soled, platform shoes grew popular among women.
+            Though men’s shoe styles remained relatively unchanged following World War II, women’s shoes made another dramatic alteration in their appearance. Women’s shoes were now arched, sophisticated and made to highlight the foot. Delicate heels grew narrower as the decade progressed.</p>
+
+            <p>Traditionally, shoes have been made from leather, wood or canvas, but in the 2010s, they are increasingly made from rubber, plastics, and other petrochemical-derived materials. Though the human foot is adapted to varied terrain and climate conditions, it is still vulnerable to environmental hazards such as sharp rocks and hot ground, which shoes protect against. Some shoes are worn as safety equipment, such as steel-soled boots which are required on construction sites.</p>
+
+            <p>These days, there are shoes for every occasion, mood, and preference. There has also been a movement away from styles that focus primarily on comfort and function, as many designers are shifting interest from a matter of practicality to that of aesthetics. Celebrities like Lady Gaga have introduced the world to footwear that’s more art and armadillo than it is clothing. If footwear trends continue in this fashion, we can expect the shoes of the future to be even more out-of-this-world.</p>
+
+            <p>Sources: National Geographic, Wikipedia, All-That-Is-Interesting.com</p>
+
+
         </section>
 
         <section id="Brands">
@@ -244,7 +257,7 @@
                         <label for="overYear"> More than a year ago</label><br><br>
                     </div>
 
-                    <button type="submit" name="submit">Submit</button>
+                    <button class="btn waves-effect waves-light" type="submit" name="submit">Submit</button>
 
                 </fieldset>
             </form>
