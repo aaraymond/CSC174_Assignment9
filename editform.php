@@ -48,7 +48,7 @@ $gather = mysqli_query($link, $sql);
 		
 		Recent Purchase: <input type="text" name="shoepurchase" value="<?php echo $row['shoepurchase']; }?>"/></br></br>
 		
-		<button type="submit" name="submit" value="submit" onclick="location.href = 'admin.php';">Update Records for ID #<?php echo $counter ?></button>
+		<button type="submit" name="submitform" value="submit" onclick="location.href = 'admin.php';">Update Records for ID #<?php echo $counter ?></button>
 	</div>
 
 </form>
@@ -79,7 +79,14 @@ $gather = mysqli_query($link, $sql);
 	$query .= "WHERE counter = {$counter}";
 	$result = mysqli_query($link, $query);
 	
-
+	if (isset($_POST['submitform']))
+		{   
+?>
+	<script type="text/javascript">
+		window.location = "admin.php";
+	</script>      
+<?php
+		}
 	
 	
 ?>
