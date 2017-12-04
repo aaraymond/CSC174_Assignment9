@@ -38,6 +38,7 @@ $gather = mysqli_query($link, $sql);
 <body>
 	
 <h1>Edit Records</h1>
+<div class="center-align">In order to update certain records, scroll down and input new data points.  Make sure you hit update before exiting as data may be lost!</div>
 
 <form method="post">
 
@@ -62,6 +63,9 @@ $gather = mysqli_query($link, $sql);
 </form>
 
 <?php
+
+	if (isset($_POST['submitform']))
+		{ 
 	include 'db_info.php';
 
 
@@ -87,8 +91,7 @@ $gather = mysqli_query($link, $sql);
 	$query .= "WHERE counter = {$counter}";
 	$result = mysqli_query($link, $query);
 	
-	if (isset($_POST['submitform']))
-		{   
+	  
 ?>
 	<script type="text/javascript">
 		window.location = "admin.php";
