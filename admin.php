@@ -48,7 +48,7 @@
 	<div class="center-align">
 		<a href="logout.php" class="waves-effect waves-custom btn-flat">Sign Out of Your Account</a>
 	</div>
-
+	
 	
 
 	<table class="admintable">
