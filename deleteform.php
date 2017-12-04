@@ -53,7 +53,7 @@ $sql = "DELETE FROM survey WHERE counter=$counter";
 
 <script>
         var timer = setTimeout(function() {
-            window.location='http://localhost/CSC174_Assignment9/admin.php'
+            window.location='admin.php'
         }, 3000);
 </script>
 	
