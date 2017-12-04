@@ -1,7 +1,17 @@
-/* label color */
-   .input-field label {
-     color: #c01919;
-   }
+  span.thumb.active{
+  	background-color: #c01919
+  }
+
+input[type=range]::-webkit-slider-thumb {
+    background-color:  #c01919;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color:  #c01919;
+  }
+  input[type=range]::-ms-thumb {
+    background-color:  #c01919;
+  }
+
    .input-field .active{
 	   color: #c01919 !important;
    }

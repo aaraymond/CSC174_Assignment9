@@ -182,12 +182,15 @@
             <form method="post" action="survey-processor.php">
                 <fieldset>
                     <h3>Personal Information</h3>
-                    
+                    <div class="input-field">
                     <label for="name">Name: </label>
-                    <input class="input-field" type="text" name="name" id="name" required><br>
+                    <input type="text" name="name" id="name" required><br>
+                    </div>
                     
+                    <div class="input-field">
                     <label for="email">Email: </label>
-                    <input class="input-field" type="email" name="email" id="email" required><br><br>
+                    <input type="email" name="email" id="email" required>
+                    </div><br><br>
 
                     <div class="questionTitle">Please Select Your Gender:</div>
 
@@ -243,7 +246,7 @@
 
                     <div class="question">
                         <div class="questionTitle">When did you last purchase a pair of shoes?</div>
- 
+                    
                         <input type="radio" name="shoePurchase" id="lessOne" value="Less than a month ago">
                         <label for="lessOne"> Less than a month ago</label><br>
 
