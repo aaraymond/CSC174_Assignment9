@@ -16,11 +16,9 @@
 
 	$connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 
-	// 2. Perform database query
 	$query  = "SELECT * ";
 	$query .= "FROM survey ";
 	$query .= "Order BY Counter ASC";
-
 
 	$result = mysqli_query($connection, $query);
 	

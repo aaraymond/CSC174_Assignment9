@@ -49,7 +49,7 @@ $gather = mysqli_query($link, $sql);
 		
 		Email: <input type="text" name="email" value="<?php echo $row['email'];  ?>"/></br></br>
 		
-		Gender: <input type="text" name="gender" value="<?php echo $row['gender']; ?>"/></br></br>
+		Gender (m or f): <input type="text" name="gender" value="<?php echo $row['gender']; ?>"/></br></br>
 		
 		Styles: <input type="text" name="style" value="<?php echo $row['style']; ?>"/></br></br>
 		
