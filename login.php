@@ -93,28 +93,29 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <h2>Login</h2>
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username:<sup>*</sup></label>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
-                <span class="help-block"><?php echo $username_err; ?></span>
+            <div class="input-field">
+                <label for="username">Username: </label><br>
+                <input type="text" name="username" value="<?php echo $username; ?>" required>
             </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password:<sup>*</sup></label>
-                <input type="password" name="password" class="form-control">
-                <span class="help-block"><?php echo $password_err; ?></span>
+            <div class="input-field">
+                <label for="password">Password: </label><br>
+                <input type="password" name="password" required>
             </div>
 
-            <div class="form-group">
+            
+
+            <div class="center-align">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
 
-            <p>Don't have an administrative account? <a href="register.php">Sign up now </a>to access survey results.</p>
+
+            <p class="center-align">Don't have an administrative account? <a href="register.php">Sign up now </a>to access survey results.</p>
             
         </form>
     </div>    

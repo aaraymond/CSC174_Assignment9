@@ -260,8 +260,9 @@
                         <input type="radio" name="shoePurchase" id="overYear" value="More than a year ago">
                         <label for="overYear"> More than a year ago</label><br><br>
                     </div>
-
+                    <div class="center-align">
                     <button class="btn waves-effect waves-light" type="submit" name="submit">Submit</button>
+                    </div>
 
                 </fieldset>
             </form>

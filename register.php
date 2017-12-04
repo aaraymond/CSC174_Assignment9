@@ -98,15 +98,25 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
+    
+
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-
+            
             <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label>Username:<sup>*</sup></label>
                 <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
@@ -125,12 +135,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
 
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-default" value="Reset">
+            <div class="form-group center-align">
+                <input type="submit" class="btn" value="Submit">
+                <input type="reset" class="btn" value="Reset">
             </div>
             
-            <p>Already have an account? <a href="login.php">Login here</a>.</p>
+            <p class="center-align">Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>    
 </body>
