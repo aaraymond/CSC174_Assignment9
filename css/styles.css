@@ -456,5 +456,9 @@ footer .info .highlight{
 
 }
 
+.male, .female {
+	display: none;
+}
+
 
 
