@@ -63,7 +63,7 @@
 
 	<div class="center-align">
 
-	<h1>Survey Insert</h1>
+	<h1>Survey Submitted</h1>
 
 <?php
 	if ($result) {
