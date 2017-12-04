@@ -191,17 +191,17 @@
 
                     <div class="questionTitle">Please Select Your Gender:</div>
 
-                    <input type="radio" name="gender" id="male" value="male">
+                    <input class="gender" type="radio" name="gender" id="male" value="male">
                     <label for="male"> Male</label><br>
 
-                    <input type="radio" name="gender" id="female" value="female">
+                    <input class=" gender" type="radio" name="gender" id="female" value="female">
                     <label for="female"> Female</label>
                 </fieldset>
 
                 <fieldset>
                     <h3>About Your Shoes</h3>
 
-                    <div class="male box" style="display:none">
+                    <div class="male box" >
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="dress" value="dress">
@@ -214,7 +214,7 @@
                         <label for="athletic"> Athletic</label><br><br>
                     </div>
 
-                    <div class="female box" style="display:none">
+                    <div class="female box" >
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="heels" value="heels">
@@ -286,7 +286,7 @@
 <!-- Hide/show divs -->
 <script type="text/javascript">
 $(document).ready(function(){
-    $('input[type="radio"]').click(function(){
+    $('.gender').click(function(){
         var inputValue = $(this).attr("value");
         var targetBox = $("." + inputValue);
         $(".box").not(targetBox).hide();
