@@ -63,6 +63,9 @@ $gather = mysqli_query($link, $sql);
 </form>
 
 <?php
+
+	if (isset($_POST['submitform']))
+		{ 
 	include 'db_info.php';
 
 
@@ -88,8 +91,7 @@ $gather = mysqli_query($link, $sql);
 	$query .= "WHERE counter = {$counter}";
 	$result = mysqli_query($link, $query);
 	
-	if (isset($_POST['submitform']))
-		{   
+	  
 ?>
 	<script type="text/javascript">
 		window.location = "admin.php";
