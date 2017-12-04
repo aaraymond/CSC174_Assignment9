@@ -59,7 +59,9 @@
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
-<body>
+<body class="contatiner">
+
+	<div class="center-align">
 
 	<h1>Survey Insert</h1>
 
@@ -79,7 +81,7 @@
 ?>
 	<br>
 	<a href="index.php">Back to the Survey</a>
-
+	</div>
 </body>
 </html>
 
