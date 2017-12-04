@@ -198,17 +198,17 @@
 
                     <div class="questionTitle">Please Select Your Gender:</div>
 
-                    <input class="gender" type="radio" name="gender" id="male" value="male">
+                    <input class="gender" type="radio" name="gender" id="male" value="m">
                     <label for="male"> Male</label><br>
 
-                    <input class=" gender" type="radio" name="gender" id="female" value="female">
+                    <input class=" gender" type="radio" name="gender" id="female" value="f">
                     <label for="female"> Female</label>
                 </fieldset>
 
                 <fieldset>
                     <h3>About Your Shoes</h3>
 
-                    <div class="male box" >
+                    <div class="m box" >
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="dress" value="dress">
@@ -221,7 +221,7 @@
                         <label for="athletic"> Athletic</label><br><br>
                     </div>
 
-                    <div class="female box" >
+                    <div class="f box" >
                         <div class="questionTitle">Which of the following shoe styles do you own?</div>
 
                         <input type="checkbox" name="styleType[]" id="heels" value="heels">

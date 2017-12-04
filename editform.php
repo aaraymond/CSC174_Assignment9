@@ -57,7 +57,9 @@ $gather = mysqli_query($link, $sql);
 		
 		Recent Purchase: <input type="text" name="shoepurchase" value="<?php echo $row['shoepurchase']; }?>"/></br></br>
 		
-		<button type="submit" name="submitform" value="submit" onclick="location.href = 'admin.php';">Update Records for ID #<?php echo $counter ?></button>
+		<div class="center-align">
+			<button class="btn" type="submit" name="submitform" value="submit" onclick="location.href = 'admin.php';">Update Data for ID #<?php echo $counter; ?></button>
+		</div>
 	</div>
 
 </form>
@@ -101,7 +103,10 @@ $gather = mysqli_query($link, $sql);
 	
 	
 ?>
-<a href="admin.php">Return to the admin page here</a>
+
+	<div class="right">
+		<a href="admin.php">Return to the admin page here</a>
+	</div>
 
 </body>
 
