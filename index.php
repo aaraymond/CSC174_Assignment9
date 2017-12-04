@@ -59,6 +59,7 @@
         <section id="Shoes">
             <h1>Do you <span class="highlight">shoe</span>?</h1>
             <!-- This section will include a banner or graphic with two buttons, take survey or read more displayed in the terminal area. -->
+            <img src="images/shoeBanner.png" alt="shoe banner">
         </section>
 
         <section id="Overview">
