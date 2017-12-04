@@ -34,6 +34,8 @@
  
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/override.css">
 	
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -46,12 +48,12 @@
 	<h2 class="center-align">Hi, <strong><?php echo $_SESSION['username']; ?></strong>. Welcome to our site.</h2>
 	
 	<div class="center-align">
-		<a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+		<a href="logout.php" class="waves-effect waves-custom btn-flat">Sign Out of Your Account</a>
 	</div>
 
 	
 
-	<table>
+	<table class="admintable">
 	<tr>
 			<th>ID</th>
 			<th>Name</th>
@@ -60,6 +62,7 @@
 			<th>Style Types</th>
 			<th>Likeliness</th>
 			<th>Shoe Purchases</th>
+			<th>Data Changes</th>
 
 		</tr>
 
@@ -72,7 +75,7 @@
 
 
 
-<tr>
+<tr class="admintable">
 			<td><?php echo $pages["counter"]; ?></td>
 			<td><?php echo $pages["name"]; ?></td>		
 			<td><?php echo $pages["email"]; ?></td>
@@ -100,8 +103,9 @@
 	</table>
 
 	<br>
-	<a href="index.php">Click Here</a> to return to the suvery
-
+	<div class="center-align">
+		<a href="index.php">Click Here</a> to return to the suvery
+	</div>
 </body>
 </html>
 
