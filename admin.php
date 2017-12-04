@@ -40,12 +40,16 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
 </head>
-<body>
+<body class="container">
 
-	<h1>Survey db </h1>
-	<h2>Hi, <strong><?php echo $_SESSION['username']; ?></strong>. Welcome to our site.</h2>
+	<h1 class="center-align">Shoe Survey Database</h1>
+	<h2 class="center-align">Hi, <strong><?php echo $_SESSION['username']; ?></strong>. Welcome to our site.</h2>
+	
+	<div class="center-align">
+		<a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+	</div>
 
-	<a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a>
+	
 
 	<table>
 	<tr>
