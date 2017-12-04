@@ -199,6 +199,23 @@ h1 span.highlight{
 
 }
 
+a.waves-custom {
+	border: solid;
+	border-width: 2px;
+	border-color: #c01919;
+	margin: 5px;
+	font-family: sans-serif;
+	font-weight: 200;
+	font-size: 25px;
+	letter-spacing: 1.6px;
+	line-height: 1.6;
+}
+
+div.action-btns {
+	text-align: center;
+	margin-top: 50px;
+}
+
 /* Overview Section */
 
 #Overview {
@@ -450,10 +467,6 @@ footer .info .highlight{
 	border-bottom-width: 1px;
 	border-bottom-color: #c01919;
 
-}
-
-.male, .female {
-	display: none;
 }
 
 
