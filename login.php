@@ -98,19 +98,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <p>Please fill in your credentials to login.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
 
-            <div class="input-field">
-                <label for="username">Username: </label><br>
-                <input type="text" name="username" value="<?php echo $username; ?>" required>
+            <div class="input-field form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>" required>
+                <span class="help-block"><?php echo $username_err; ?></span>
             </div>
 
-            <div class="input-field">
-                <label for="password">Password: </label><br>
-                <input type="password" name="password" required>
+            <div class="input-field form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" class="form-control" required>
+                <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 
-            
-
-            <div class="center-align">
+            <div class="form-group center-align">
                 <input type="submit" class="btn btn-primary" value="Submit">
             </div>
 

@@ -116,31 +116,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            
-            <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                <label>Username:<sup>*</sup></label>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+
+            <div class="input-field form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                <label for="username">Username:</label><br>
+                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>" required>
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>
 
-            <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                <label>Password:<sup>*</sup></label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+            <div class="input-field form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                <label for="password">Password:</label><br>
+                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" required>
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 
-            <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                <label>Confirm Password:<sup>*</sup></label>
-                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+            <div class="input-field form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" required>
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
 
             <div class="form-group center-align">
-                <input type="submit" class="btn" value="Submit">
-                <input type="reset" class="btn" value="Reset">
+                <input type="submit" class="btn btn-primary" value="Submit">
             </div>
             
-            <p class="center-align">Already have an account? <a href="login.php">Login here</a>.</p>
+            <p>Already have an account? <a href="login.php">Login here</a>.</p>
         </form>
     </div>    
 </body>
