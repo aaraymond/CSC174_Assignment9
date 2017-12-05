@@ -179,6 +179,12 @@ div.action-btns {
 	line-height: 1.6;
 }
 
+#Overview a{
+	color:#8c8c8c;
+}
+
+#Overview a:hover {color: #c01919;}
+
 /* Brands Section */
 
 #Brands {
