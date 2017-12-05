@@ -292,7 +292,7 @@
 </script>
 
 <!-- Hide/show divs -->
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
     $('.gender').click(function(){
         var inputValue = $(this).attr("value");
