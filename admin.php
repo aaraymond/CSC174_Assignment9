@@ -89,7 +89,7 @@
       					Edit
   			</a>
 
-			<a href='delete_form.php?counter="<?php echo $pages['counter']; ?>"&name=<?php echo $pages['name']; ?>' onclick="return confirm('Delete record?');">Delete</a>
+			<a href='delete_form.php?counter="<?php echo $pages['counter']; ?>"&name=<?php echo $pages['name']; ?>' onclick="return confirm('Delete ID#<?php echo $pages ['counter'] ?>?');">Delete</a>
  				
 
 			</td>
