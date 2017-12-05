@@ -84,12 +84,12 @@
 			
 			<td>
 			
-  			<a href='editform.php?counter=<?php echo $pages['counter']; ?>'>
+  			<a href='edit_form.php?counter=<?php echo $pages['counter']; ?>'>
   
       					Edit
   			</a>
 
-			<a href='deleteform.php?counter="<?php echo $pages['counter']; ?>"&name=<?php echo $pages['name']; ?>' onclick="return confirm('Delete record?');">Delete</a>
+			<a href='delete_form.php?counter="<?php echo $pages['counter']; ?>"&name=<?php echo $pages['name']; ?>' onclick="return confirm('Delete record?');">Delete</a>
  				
 
 			</td>

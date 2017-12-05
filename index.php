@@ -97,28 +97,28 @@
             
             <div class="row">
                 <div class="col s3">
-                    <img class="responsive-img" src="images/logoNike.png" alt="Nike Logo">
+                    <img class="responsive-img" src="images/logo_nike.png" alt="Nike Logo">
                     <div class="middle">
                          <div class="text">Nike</div>
                     </div>
                 </div>
 
                 <div class="col s3">
-                    <img class="responsive-img" src="images/logoAdidas.png" alt="Adidas Logo">
+                    <img class="responsive-img" src="images/logo_adidas.png" alt="Adidas Logo">
                     <div class="middle">
                          <div class="text">Adidas</div>
                     </div>
                 </div> 
 
                 <div class="col s3">
-                    <img class="responsive-img" src="images/logoJordan.png" alt="Jordan Logo">
+                    <img class="responsive-img" src="images/logo_jordan.png" alt="Jordan Logo">
                     <div class="middle">
                          <div class="text">Jordan</div>
                     </div>
                 </div> 
 
                 <div class="col s3">
-                    <img class="responsive-img" src="images/logoConverse.png" alt="Converse Logo">
+                    <img class="responsive-img" src="images/logo_converse.png" alt="Converse Logo">
                     <div class="middle">
                          <div class="text">Converse</div>
                     </div>
@@ -134,19 +134,19 @@
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <div class="row">  
                     <div class="col s4">
-                        <img class="responsive-img" src="images/dressMen.png" alt="Dress">
+                        <img class="responsive-img" src="images/dress_men.png" alt="Dress">
                         <div class="middle">
                             <div class="text">Dress</div>
                         </div>
                     </div>
                     <div class="col s4">
-                        <img class="responsive-img" src="images/mensCasual.png" alt="Casual">
+                        <img class="responsive-img" src="images/mens_casual.png" alt="Casual">
                         <div class="middle">
                             <div class="text">Casual</div>
                         </div>
                     </div>
                     <div class="col s4">
-                        <img class="responsive-img" src="images/mensAthletic.png" alt="Athletic">
+                        <img class="responsive-img" src="images/mens_athletic.png" alt="Athletic">
                         <div class="middle">
                             <div class="text">Athletic</div>
                         </div>
@@ -158,19 +158,19 @@
                 <!-- Possibly make a horizontal grid layout and use the style images instead of words, then on hover display the style name. -->
                 <div class="row">  
                     <div class="col s4">
-                        <img class="responsive-img" src="images/womensHeels.png" alt="Heels">
+                        <img class="responsive-img" src="images/womens_heels.png" alt="Heels">
                         <div class="middle">
                             <div class="text">Heels</div>
                         </div>
                     </div>
                     <div class="col s4">
-                        <img class="responsive-img" src="images/womensFlats.png" alt="Flats">
+                        <img class="responsive-img" src="images/womens_flats.png" alt="Flats">
                         <div class="middle">
                             <div class="text">Flats</div>
                         </div>
                     </div>
                     <div class="col s4">
-                        <img class="responsive-img" src="images/womensAthletic.png" alt="Athletic">
+                        <img class="responsive-img" src="images/womens_athletic.png" alt="Athletic">
                         <div class="middle">
                             <div class="text">Athletic</div>
                         </div>
@@ -183,7 +183,7 @@
         <section id="Survey">
             <h2 class="first">Shoe <span class="highlight">Survey</span></h2>
 
-            <form method="post" action="survey-processor.php">
+            <form method="post" action="survey_processor.php">
                 <fieldset>
                     <h3>Personal Information</h3>
                     <div class="input-field">
