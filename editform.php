@@ -37,7 +37,7 @@ $gather = mysqli_query($link, $sql);
 
 <body class="container">
 	
-<h1>Edit Records</h1>
+<h1><span class="highlight">Edit</span> Records</h1>
 <div class="center-align">In order to update certain records, scroll down and input new data points.  Make sure you hit update before exiting as new data may be lost!</div>
 
 <form method="post">
