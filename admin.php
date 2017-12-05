@@ -42,8 +42,8 @@
 </head>
 <body class="container">
 
-	<h1 class="center-align">Shoe Survey Database</h1>
-	<h2 class="center-align">Hi, <strong><?php echo $_SESSION['username']; ?></strong>. Welcome to our site.</h2>
+	<h1 class="center-align">Shoe Survey <span class="highlight">Database</span></h1>
+	<h2 class="center-align">Hi, <span class="highlight"><?php echo $_SESSION['username']; ?></span>. Welcome to our site.</h2>
 	
 	<div class="center-align">
 		<a href="logout.php" class="waves-effect waves-custom btn-flat">Sign Out of Your Account</a>

@@ -56,16 +56,20 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/override.css">
     <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body>
+</head>
+<body class="contatiner">
 
-	<h1>Survey Insert</h1>
+	<div class="center-align">
+
+	<h1>Survey <span class="highlight">Submitted</span></h1>
 
 <?php
 	if ($result) {
-		echo "Success! Thank you for completing the survey $name!";
+		echo "Success! Thank you for completing the survey, $name!";
 
 ?>
 
@@ -79,7 +83,8 @@
 ?>
 	<br>
 	<a href="index.php">Back to the Survey</a>
-
+	</div>
+	
 </body>
 </html>
 
