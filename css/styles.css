@@ -431,7 +431,14 @@ div.action-btns {
 
 }
 
+
 #Survey form div{
+	font-family: "Roboto";
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#Survey form label {
 	font-family: "Roboto";
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -458,6 +465,7 @@ table {
 	margin: 3%;
 }
 
+
 th, td {
 	padding: 1%;
 	text-align: center;
@@ -467,10 +475,18 @@ table, th, td {
     border: 1px solid black;
 }
 
+td{
+	font-family: "Roboto";
+}
+
 tr:first-child {
-	background-color: black;
+	background-color: #c01919;
+	opacity:0.8;
 	color: white;
 	font-family: BebasNeue, sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+
 }
 
 
