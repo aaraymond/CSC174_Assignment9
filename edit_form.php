@@ -42,7 +42,7 @@ $gather = mysqli_query($link, $sql);
 
 <form method="post">
 
-	<div> 
+	<div class="input-field"> 
 	
 	<?php while($row = mysqli_fetch_assoc($gather)){ ?>
 		Name: <input type="text" name="name" value="<?php echo $row['name']; ?>"/></br></br>
