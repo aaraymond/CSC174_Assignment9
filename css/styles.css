@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -63,6 +64,8 @@ a {
 
 
 
+=======
+>>>>>>> 8f2cbf0c4e47356e0b51c90ae6a7586bda8d776b
 a:hover {color: #c01919;}
 
 section {
@@ -87,29 +90,8 @@ section {
 	height: 100%;
 	background-color: #ffffff;
 	padding: 15px;
-
 	
 	}
-
-
-article, aside {display: table-cell;}
-article {
-	width: 55%;
-	padding-bottom: 5%;
-	padding-right: 15%;
-	}
-
-aside {
-	width: 45%;
-	padding-left: 40px;
-	vertical-align: top;
-	}
-
-
-footer {
-	font-size: smaller;
-}
-
 
 .btn {
     background-color: #c01919;
@@ -268,6 +250,12 @@ div.action-btns {
 	letter-spacing: 1.5px;
 	line-height: 1.6;
 }
+
+#Overview a{
+	color:#8c8c8c;
+}
+
+#Overview a:hover {color: #c01919;}
 
 /* Brands Section */
 
@@ -500,11 +488,13 @@ tr:first-child {
 
 
 footer .info {
+	font-family: "Roboto";
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
+	font-size: 12px;
 }
 
 footer .info .highlight{
