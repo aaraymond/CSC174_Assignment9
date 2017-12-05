@@ -471,6 +471,18 @@ footer .info .highlight{
 
 }
 
+div.right a{
+	text-transform: uppercase;
+	padding-bottom: 30px;
+	
+}
+
+div.center-align p{
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
 div.center-align a {
 	font-weight: 400;
 	text-transform: uppercase;

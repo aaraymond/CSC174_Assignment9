@@ -38,6 +38,7 @@ $sql = "DELETE FROM survey WHERE counter=$counter";
 	
 <body>
 	<div class="center-align">
+	<h1><span class="highlight">Deleting</span> Record</h1>
 <?php 
 	if(mysqli_query($link, $sql)){
 		echo "The records associated with $name were deleted successfully.";
