@@ -18,7 +18,6 @@ input[type=range]::-webkit-slider-thumb {
    /* label focus color */
    .input-field input:focus + label, .input-field textarea:focus + label {
      color: #c01919 !important;
-     text-transform: uppercase;
    }
    /* label underline focus color */
    .input-field input:focus, .input-field textarea:focus{

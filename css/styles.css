@@ -209,7 +209,7 @@ a.waves-custom {
 	border-width: 2px;
 	border-color: #c01919;
 	margin: 5px;
-	font-family: sans-serif;
+	font-family: "Roboto";
 	font-weight: 600;
 	font-size: 15px;
 	letter-spacing: 1.3px;
@@ -407,6 +407,7 @@ div.action-btns {
 
 /* Survey Section */
 
+
 #Survey .first{
 	border-top: 1px solid #000000;
 	padding-top: 30px;
@@ -428,9 +429,7 @@ div.action-btns {
 	padding-left: 5px;
 	padding-bottom: 25px;
 	opacity: 0.5;
-
 }
-
 
 #Survey form div{
 	font-family: "Roboto";
@@ -507,7 +506,7 @@ footer .info .highlight{
 }
 
 div.right a{
-	text-transform: uppercase;
+	
 	padding-bottom: 30px;
 
 }
