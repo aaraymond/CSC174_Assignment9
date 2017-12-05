@@ -119,19 +119,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             <div class="input-field form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                 <label for="username">Username:</label><br>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>" required>
+                <input id="username" type="text" name="username" class="form-control" value="<?php echo $username; ?>" required>
                 <span class="help-block"><?php echo $username_err; ?></span>
             </div>
 
             <div class="input-field form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                 <label for="password">Password:</label><br>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" required>
+                <input id="password" type="password" name="password" class="form-control" value="<?php echo $password; ?>" required>
                 <span class="help-block"><?php echo $password_err; ?></span>
             </div>
 
             <div class="input-field form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label for="confirm_password">Confirm Password:</label><br>
-                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" required>
+                <input id="confirm_password" type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" required>
                 <span class="help-block"><?php echo $confirm_password_err; ?></span>
             </div>
 
