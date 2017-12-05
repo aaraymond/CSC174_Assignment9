@@ -426,9 +426,10 @@ div.action-btns {
 	font-family: BebasNeue;
 	font-size: 40px;
 	letter-spacing: 2px;
-	padding-left: 5px;
-	padding-bottom: 25px;
-	opacity: 0.5;
+	padding-left: 2px;
+	padding-bottom: 20px;
+	color: #c01919;
+	opacity: 0.7;
 }
 
 #Survey form div{
@@ -446,8 +447,10 @@ div.action-btns {
 #Survey form div.questionTitle{
 	padding-bottom: 10px;
 	padding-top: 10px;
-	font-size: 16px;
-	letter-spacing: normal;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-family: BebasNeue;
+	opacity: 0.8;
 
 }
 
