@@ -1,8 +1,11 @@
+
+
+
 body {
 	background-color: #212121;
 
 	color: #404040;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'BebasNeue', sans-serif;
     	font-style: bold;
 	}
 
@@ -134,9 +137,12 @@ header div {
   font-weight: 100;
 }
 
+
 @font-face {
-	font-family: BebasNeue;
-	src: url("fonts/BebasNeueBook.otf") format("opentype"); 
+    font-family: BebasNeue;
+    src: url("fonts/BebasNeue.otf") format("opentype");
+    src: url("fonts/BebasNeue.ttf") format("truetype");
+
 }
 
 
@@ -162,6 +168,7 @@ body {
 }
 
 .navbar-fixed a{
+	padding-top: 5px;
 	font-size: 25px;
 	letter-spacing: 3px;
 }
